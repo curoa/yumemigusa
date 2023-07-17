@@ -82,7 +82,7 @@ alias rmdownload='/bin/rm --interactive=never -fr ~/download/*'
 alias ez^="vim ~/.zshrc"
 alias rz^="source ~/.zshrc"
 alias by="exit"
-alias cdu=". cdu"
+alias cdu="cd .."
 alias cv=". cv"
 alias fo="./exec.sh"
 alias ho="chmod 755 exec.sh"
