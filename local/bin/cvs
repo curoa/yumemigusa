@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ $# -eq 0 ]; then
+	cd ~/.local/var/cv_data/
+	grep "" * | sed -e "s/:/	/"
+else
+	cd ~/.local/var/cv_data/
+	rm $@
+fi

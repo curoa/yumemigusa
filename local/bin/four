@@ -1,0 +1,33 @@
+#!/bin/sh
+if [ $1 = "python" ]; then
+	cp -r ~/four/python/* .
+fi
+
+if [ $1 = "c++" ]; then
+	cp -r ~/four/c++/* .
+fi
+
+#if [ $1 = "project" ]; then
+#	cp -r ~/four/project/* .
+#fi
+
+if [ $1 = "procon" ]; then
+	cp -r ~/four/procon/* .
+fi
+
+if [ $1 = "pdflatex" ]; then
+	cp -r ~/four/pdflatex/ .
+fi
+
+if [ $1 = "beamer" ]; then
+	cp -r ~/four/beamer/ .
+fi
+
+if [ $1 = "pandoc" ]; then
+	cp -r ~/four/pandoc/* .
+fi
+
+if [ $1 = "git" ]; then
+	ln -s .git/info/exclude .exclude
+	cp ~/four/.gitignore .
+fi

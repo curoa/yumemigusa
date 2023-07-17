@@ -1,0 +1,3 @@
+t=`echo $1 | sed -e 's:/$::'`
+echo $t
+tar zcvf $t.tgz $@ --exclude .git

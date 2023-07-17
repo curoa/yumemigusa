@@ -1,0 +1,8 @@
+#!/bin/sh
+t=$1
+if [ $# -eq 0 ]; then
+	t=0
+fi
+p=`cat ~/.local/var/cv_data/$t`
+echo $p
+cd $p
