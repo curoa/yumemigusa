@@ -3,13 +3,13 @@ hi _yellow guifg=#FFF231
 syntax match _lime /_lime/
 hi _lime guifg=#99D02B
 syntax match _green /_green/
-hi _green guifg=#33A65E
+hi _green guifg=#21ba59
 syntax match _teal /_teal/
-hi _teal guifg=#1AA18E
+hi _teal guifg=#20c5af
 syntax match _aqua /_aqua/
-hi _aqua guifg=#1D86AE
+hi _aqua guifg=#51b8e1
 syntax match _blue /_blue/
-hi _blue guifg=#386CB0
+hi _blue guifg=#508fe2
 syntax match _grape /_grape/
 hi _grape guifg=#6964AD
 syntax match _violet /_violet/
@@ -23,6 +23,7 @@ hi _sunset guifg=#FC4E32
 syntax match _orange /_orange/
 hi _orange guifg=#FF9914
 
+" source %
 let dummy _yellow _lime _green _teal _aqua _blue _grape _violet _ruby _red _sunset _orange
 
 

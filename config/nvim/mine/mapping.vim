@@ -1,5 +1,3 @@
-" nvim/mine/vimrc.vim
-
 " file opration
 nnoremap <space>q :q<cr>
 nnoremap <space>w :wq<cr>
@@ -90,7 +88,18 @@ onoremap i2 i"
 onoremap a2 a"
 
 
+
 " terminal emulator
 tnoremap <Esc> <C-\><C-n>
 "autocmd TermOpen * setlocal nonumber
 autocmd TermOpen * map <buffer> <silent> <cr> A<cr>
+
+
+" netrw
+" ref. https://teratail.com/questions/69995
+function! NetrwMapping_prev_tab(islocal) abort
+  return "normal! gT"
+endfunction
+let g:Netrw_UserMaps = [
+\   ['gb', 'NetrwMapping_prev_tab'],
+\ ]

@@ -18,8 +18,9 @@ augroup vimrcEx
 				\exe "normal g`\"" | endif
 augroup END
 
-source ~/.config/nvim/mapping.vim
-source ~/.config/nvim/highlight.vim
+source ~/.config/nvim/mine/mapping.vim
+source ~/.config/nvim/mine/_highlight.vim
+source ~/.config/nvim/mine/syntaxinfo.vim
 
 "TODO
 " color
