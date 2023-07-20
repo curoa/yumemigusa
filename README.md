@@ -16,7 +16,7 @@ ihttps://drive.google.com/drive/folders/0B1BdHf2G96URfnpacTdWbmZPdGk4el91cjFFSC1
 local -> ~/.local
 gitconfig -> ~/.gitconfig
 zshrc -> ~/.zshrc
-nvim -> ~/.config/nvim
+config -> ~/.confg
 
 sudo apt install build-essential
 pyenv
