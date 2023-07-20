@@ -1,0 +1,12 @@
+---
+title: title
+subtitle: subtitle
+author: yusei yokoyama
+
+# LaTeX用の設定
+documentclass: bxjsarticle
+papersize: a4
+header-includes: |
+    \usepackage[whole]{bxcjkjatype}
+citecolor: blue
+...

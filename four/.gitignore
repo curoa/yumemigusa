@@ -1,0 +1,7 @@
+.exclude
+^*
+*.swp
+log
+exec.sh
+
+__pycache__/

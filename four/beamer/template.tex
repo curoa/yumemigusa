@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,a4paper]{beamer}           % pdfTeX の場合
+\usetheme{Warsaw}
+\usefonttheme{professionalfonts} % 数式のフォントをかっこよくする
+\hypersetup{unicode}% しおりの和文出力に必要
+\setbeamertemplate{headline}{
+}
+\setbeamertemplate{footline}{
+	\leavevmode%
+	\hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+			\usebeamerfont{author in head/foot}\insertshortauthor
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+			\usebeamerfont{title in head/foot}\insertshorttitle
+			\hspace{\fill} \insertframenumber ~/ \inserttotalframenumber
+	\end{beamercolorbox}}%
+	\vskip0pt%
+}
+\setbeamertemplate{navigation symbols}{}
+% 付録をページ数にカウントしない NPC
+% appendixの後に，\backupbeginと書き，\end{document}の手前に，\backupendと書けばよい．
+\newcommand{\backupbegin}{
+	\newcounter{framenumberappendix}
+	\setcounter{framenumberappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+	\addtocounter{framenumberappendix}{-\value{framenumber}}
+	\addtocounter{framenumber}{\value{framenumberappendix}}
+}
+% NPC
+\usepackage[whole]{bxcjkjatype}% whole 指定 日本語使える
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{theorem}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{mathtools}
+%\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
+\usepackage{overpic}
+\usepackage[overlay]{textpos}
+%\setbeamertemplate{background}[grid][step=30pt]
+
+\newcommand{\bhrule}{{\color{blue} \hrule}}
+
+\definecolor{nico}{rgb}{1, 0.90, 0.96}
+\definecolor{orange}{rgb}{0.95, 0.3, 0.0}
+\definecolor{ash}{rgb}{0.6,0.6,0.6}
+\renewcommand{\alert}[1]{{\color{orange}{#1}}}
+
+\newcommand{\p}{{\color{red}+1}}
+\newcommand{\n}{{\color{blue}-1}}
+\newcommand{\score}{\mathrm{score}}
+\newcommand{\calcScore}{\mathrm{calcScore}}
+\newcommand{\bound}{\mathrm{bound}}
+\renewcommand{\r}[1]{\textcolor{red}{\mbox{#1}}}
+\renewcommand{\b}[1]{\textcolor{blue}{\mbox{#1}}}
+\newcommand{\rz}{\textcolor{red}{0}}
+\newcommand{\sz}{\textcolor{ash}{0}}
+\newcommand{\bp}{\textcolor{blue}{・}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% 和文タイトル
+\title{Title}
+\author{横山侑政}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{content.tex}
+
+%------------------------------
+\begin{frame}{~}
+	\begin{center}
+		\textcolor[rgb]{0.0, 0.0, 1.0}{T}
+		\textcolor[rgb]{0.0, 0.0, 0.8}{h}
+		\textcolor[rgb]{0.0, 0.0, 0.6}{a}
+		\textcolor[rgb]{0.0, 0.0, 0.4}{n}
+		\textcolor[rgb]{0.0, 0.0, 0.2}{k}
+		\textcolor[rgb]{0.0, 0.0, 0.0}{s}
+	\end{center}
+\end{frame}
+
+\appendix
+\backupbegin
+\backupend
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+

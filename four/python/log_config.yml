@@ -1,0 +1,47 @@
+# set as below
+#    import logging
+#    import logging.config
+#    import yaml
+#    config = yaml.safe_load(open("log_config.yml"))
+#    logging.config.dictConfig(config)
+
+# set alternative
+#    import logging
+#    logger = logging.getLogger()
+#    #handler = logging.FileHandler(filename="log")
+#    handler = logging.StreamHandler()
+#    handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)8s %(message)s'))
+#    logger.addHandler(handler)
+#    logger.setLevel(logging.DEBUG)
+
+# for use
+#    import logging
+#    logger = logging.getLogger(__name__)
+#
+#    logger.error('hello error')
+#    logger.warning('hello warning')
+#    logger.info('hello info')
+#    logger.debug('hello debug')
+
+version: 1
+formatters:
+  default:
+    format: "%(asctime)s %(name)s:%(lineno)s %(funcName)s [%(levelname)s]: %(message)s"
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: default
+    stream: ext://sys.stdout
+  file:
+    class: logging.FileHandler
+    formatter: default
+    filename: log
+loggers:
+  __main__:
+    level: INFO
+    handlers: [console, file]
+    propagate: yes
+root:
+  level: INFO
+  handlers: [console, file]
+  propagate: yes
