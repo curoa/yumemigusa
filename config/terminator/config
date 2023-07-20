@@ -1,0 +1,21 @@
+[global_config]
+[keybindings]
+  go_up = <Primary><Shift>k
+  go_down = <Primary><Shift>j
+  go_left = <Primary><Shift>h
+  go_right = <Primary><Shift>l
+[profiles]
+  [[default]]
+    background_darkness = 0.85
+    background_type = image
+    cursor_color = "#aaaaaa"
+    background_image = /home/blackcat/Pictures/kaena_resize.png
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
