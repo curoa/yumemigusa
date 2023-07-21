@@ -110,14 +110,7 @@ alias cdf=". cdf"
 #complete -W "`ls ~/.local/bin/cv_data/`" cv
 #complete -W "c++ project procon pdflatex beamer python" four
 #complete -F _minimal google-chrome
-function _cv {
-	_files -W ~/.local/bin/cv_data/
-}
-compdef _cv cv
-function _four {
-	compadd beamer c++ pdflatex python procon pandoc
-}
-compdef _four four
+source ~/.zsh/completion/mycmd.zsh
 
 # git
 alias st="git status"
