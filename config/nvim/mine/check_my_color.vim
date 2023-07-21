@@ -11,7 +11,7 @@ hi _aqua guifg=#51b8e1
 syntax match _blue /_blue/
 hi _blue guifg=#508fe2
 syntax match _grape /_grape/
-hi _grape guifg=#6964AD
+hi _grape guifg=#7c76cc
 syntax match _violet /_violet/
 hi _violet guifg=#A45AAA
 syntax match _ruby /_ruby/

@@ -20,7 +20,7 @@ hi String guifg=#A45AAA
 hi Strong gui=bold
 hi Identifier guifg=#51b8e1
 hi Statement guifg=#FFF231
-hi PreProc guifg=#6964AD
+hi PreProc guifg=#7c76cc
 hi Type gui=bold guifg=#38ba68
 hi Constructor gui=nocombine,NONE guifg=#20c5af
 hi Special guifg=#cc7b10
