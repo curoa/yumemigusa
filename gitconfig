@@ -3,6 +3,7 @@
 [alias]
 	# to checkout remote branch in local
 	# `git cb branch_name origin/branch_name`
+	st = status
 	br = branch
 	co = checkout
 	cb = checkout -b
