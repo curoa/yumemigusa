@@ -1,14 +1,23 @@
 jp ubuntu
 https://www.ubuntulinux.jp/download
 
+update upgrade
+
+install chrome
+
+文字サイズ
+tweaks で 倍率 2.0
+
+install terminator
+
+set ssh for github, and clone this repository
+
 キーボード設定
 https://qiita.com/curoa/items/9bf52d90a8f60beb5c00
 
 ディレクトリを英語に
 https://www.rough-and-cheap.jp/linux/ubuntu-change-xdg-directory-name/
 
-文字サイズ
-tweaks で 倍率 2.0
 
 画像は Google Drive で管理
 ihttps://drive.google.com/drive/folders/0B1BdHf2G96URfnpacTdWbmZPdGk4el91cjFFSC10QmJKSHVLSXBwdWhNMExzcDFfcEFMVjA?resourcekey=0-D0qaGYe7k3PBjBuA2wS-aQ
@@ -17,6 +26,7 @@ ihttps://drive.google.com/drive/folders/0B1BdHf2G96URfnpacTdWbmZPdGk4el91cjFFSC1
 local -> ~/.local  
 gitconfig -> ~/.gitconfig  
 zshrc -> ~/.zshrc  
+zsh -> ~/.zsh  
 config -> ~/.config  
 
 sudo apt install build-essential
