@@ -9,7 +9,7 @@
   [[default]]
     background_darkness = 0.85
     background_type = image
-    background_image = /home/blackcat/Pictures/kaena_resize.png
+    background_image = /home/blackcat/Pictures/image/henrietta_resize.jpg
 [layouts]
   [[default]]
     [[[window0]]]
@@ -18,4 +18,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = default
 [plugins]
