@@ -4,11 +4,11 @@
   go_down = <Primary><Shift>j
   go_left = <Primary><Shift>h
   go_right = <Primary><Shift>l
+  preferences_keybindings = ""
 [profiles]
   [[default]]
     background_darkness = 0.85
     background_type = image
-    cursor_color = "#aaaaaa"
     background_image = /home/blackcat/Pictures/kaena_resize.png
 [layouts]
   [[default]]
