@@ -130,3 +130,7 @@ alias lg="git lg"
 
 # http://zsh.sourceforge.net/Doc/Release/Completion-System.html#Completion-System
 # setopt no_flow_control # what's this?
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
