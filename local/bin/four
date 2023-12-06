@@ -29,5 +29,5 @@ fi
 
 if [ $1 = "git" ]; then
 	ln -s .git/info/exclude .exclude
-	cp ~/four/.gitignore .
+	cp ~/four/git/.gitignore .
 fi
