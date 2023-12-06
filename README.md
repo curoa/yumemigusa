@@ -35,11 +35,11 @@ youtube, meet as app
 https://support.google.com/chrome_webstore/answer/3060053?hl=ja#zippy=%2Cchrome-%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B9%E3%83%88%E3%82%A2%E3%81%8B%E3%82%89%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B
 これをしたり、URL からアプリとして開くとかしてるうまくいった。
 
-sudo apt install build-essential
-pyenv
-poetry
+sudo apt install build-essential  
+pyenv  
+poetry  
 
-nvim
+nvim  
 TSInstall python bash html htmldjango cpp json yaml javascript lua vim
 
 
