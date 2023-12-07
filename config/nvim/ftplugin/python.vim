@@ -1,4 +1,4 @@
-nnoremap <buffer> <space>d yypkIprint("<esc>A") #debug<esc>jIprint(<esc>A) # debug<esc>
+nnoremap <buffer> <space>d yypkIprint("<esc>A") # debug<esc>jIprint(<esc>A) # debug<esc>
 nnoremap <buffer> <space>e ^"aDaprint("<c-r>a", <c-r>a) # debug
 
 inoremap <buffer> fo^ <esc>Ifor i in <esc>A:<esc>^ws
