@@ -77,7 +77,6 @@ alias lstmp='ls ~/tmp/'
 alias rmpost='/bin/rm --interactive=never -fr ~/post/* ~/post/.[^.]*'
 alias tmpnote='vim ~/tmp/note'
 alias cool='vim ~/work/dream/memos/cool'
-alias rmdownload='/bin/rm --interactive=never -fr ~/download/*'
 
 alias ez^="vim ~/.zshrc"
 alias rz^="source ~/.zshrc"

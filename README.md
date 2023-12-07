@@ -50,4 +50,9 @@ pactl list short sinks # check name
 # code:/etc/pulse/default.pa # edit tail of file according to URL
 rm -r ~/.config/pulse/ # delete cache
 killall pulseaudo # reboot pulseaudo
+
+
+pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo
+# write shell script to do above command, and add ubuntsu startup apps
+# you can search startup setting by "自動"
 ```
