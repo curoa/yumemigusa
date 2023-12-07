@@ -52,6 +52,7 @@ inoremap <c-d> <c-r>-
 inoremap <c-g> <c-r>0
 " paste previous yanked or deleted
 cnoremap <c-f> <c-r>"
+inoremap <c-f> <c-r>"
 " https://github.com/kylechui/nvim-surround
 nmap ysw ysiw
 

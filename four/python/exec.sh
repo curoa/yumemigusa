@@ -1,4 +1,4 @@
 cd `pwd -P`
 
-python main.py
-#poetry run python main.py
+python main.py | tee ^a
+#poetry run python main.py | tee ^a
