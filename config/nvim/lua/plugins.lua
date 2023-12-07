@@ -24,8 +24,8 @@ require("packer").startup(function()
 			require("nvim-surround").setup({
 				-- Configuration here, or leave empty to use defaults
 				keymaps = {
-					-- insert = "<C-g>s",
-					-- insert_line = "<C-g>S",
+					insert = "<C-z>s", -- default <c-g> is conflict to my map
+					insert_line = "<C-z>S", -- default <c-g> is conflict to my map
 					normal = "ys",
 					normal_cur = "yss",
 					normal_line = "yS",
