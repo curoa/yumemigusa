@@ -1,15 +1,34 @@
-nnoremap <buffer> <space>d yypkIprint("<esc>A") # debug<esc>jIprint(<esc>A) # debug<esc>
-nnoremap <buffer> <space>e ^"aDaprint("<c-r>a", <c-r>a) # debug
+" debug
+nnoremap <buffer> <space>dl ^"aDaprint("<c-r>a", <c-r>a) # debug
+nnoremap <buffer> <space>dp yypkIprint("<esc>A") # debug<esc>jIprint(<esc>A) # debug<esc>
+nnoremap <buffer> <space>do yypkIprint("<esc>A") # debug<esc>jIpp(<esc>A) # debug<esc>
 
+" loop
 inoremap <buffer> fo^ <esc>Ifor i in <esc>A:<esc>^ws
+inoremap <buffer> en^ <esc>Ifor i in enumerate(<esc>A):<esc>^ws
+inoremap <buffer> rn^ <esc>Ifor i in range(<esc>A):<esc>^ws
 
+" short
+inoremap <buffer> s^ self
 inoremap <buffer> ap^ append
 inoremap <buffer> n^ None
+inoremap <buffer> t^ True
+inoremap <buffer> f^ False
 inoremap <buffer> con^ continue
 
 inoremap <buffer> ++ <space>+= 1
 inoremap <buffer> -- <space>-= 1
 
+" format
 nnoremap <buffer> == ^"aD"sddko<c-r>a<esc>
 
-nmap <buffer> _d^ f(bd0f)C):<esc>==Idef <esc>o
+cnoremap <buffer> co^ %s/^\(\s\+\)\([^#[:blank:]].\+\) # debug$/\1#\2 # debug/
+cnoremap <buffer> ci^ %s/^\(\s\+\)#\(.\+\) # debug$/\1\2 # debug/
+
+" move
+nnoremap <buffer> ( :let @s = @/ \| :let @/ = "^\\s*def "<cr>N:let @/ = @s \| noh<cr>t(
+nnoremap <buffer> ) :let @s = @/ \| :let @/ = "^\\s*def "<cr>n:let @/ = @s \| noh<cr>t(
+
+" macro
+nmap <buffer> _d^ f(bd0f(%C):<cr><esc>k==Idef <esc>o
+

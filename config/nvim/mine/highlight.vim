@@ -32,4 +32,5 @@ hi link @constructor Constructor
 hi link @parameter Strong
 hi link @variable Normal
 hi link @field Normal
+hi link @attribute PreProc
 
