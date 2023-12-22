@@ -15,6 +15,7 @@ gitconfig -> ~/.gitconfig
 zshrc -> ~/.zshrc  
 zsh -> ~/.zsh  
 config -> ~/.config  
+ssh_config -> ~/.ssh/config
 
 install terminator
 
