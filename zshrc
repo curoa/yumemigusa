@@ -94,6 +94,7 @@ alias lx="loadxkb"
 
 alias py="python"
 
+alias evi="evince"
 #alias open="eog"
 alias ulimitcoredump="ulimit -c unlimited"
 alias thunderbird="thunderbird &"

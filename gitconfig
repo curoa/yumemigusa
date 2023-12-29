@@ -5,12 +5,12 @@
 	# `git cb branch_name origin/branch_name`
 	st = status
 	br = branch
+	bra = branch -a
 	co = checkout
 	cb = checkout -b
 	sh = stash
 	sl = stash list
 	sp = stash pop
-	push = push -u
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [core]

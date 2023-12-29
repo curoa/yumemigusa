@@ -55,6 +55,7 @@ cnoremap <c-f> <c-r>"
 inoremap <c-f> <c-r>"
 " https://github.com/kylechui/nvim-surround
 nmap ysw ysiw
+nmap ysW ysiW
 
 
 " move
