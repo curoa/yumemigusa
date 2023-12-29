@@ -5,3 +5,6 @@ source ~/.config/nvim/mine/syntaxinfo.vim
 
 "MEMO
 " O delay `timeoutlen`, `ttimeoutlen`
+
+"TODO write appropriate file
+autocmd BufRead ^a nmap <buffer> <cr> :e!<cr>
