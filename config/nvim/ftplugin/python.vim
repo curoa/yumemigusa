@@ -32,3 +32,5 @@ nnoremap <buffer> ) :let @s = @/ \| :let @/ = "^\\s*def "<cr>n:let @/ = @s \| no
 " macro
 nmap <buffer> _d^ f(bd0f(%C):<cr><esc>k==Idef <esc>o
 
+" util
+cnoremap <buffer> ch^ ~/cheetsheet/python/

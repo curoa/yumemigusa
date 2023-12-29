@@ -10,8 +10,8 @@ vim.cmd('source ~/.config/nvim/_init.vim')
 
 -- TODO
 -- TODO etc highlight
--- refreash by Enter in ^a
 -- highlight f"{fuga} hoge"
+-- maybe useful: https://neovim.io/doc/user/syntax.html
 
 
 -- TODO

@@ -8,3 +8,4 @@ source ~/.config/nvim/mine/syntaxinfo.vim
 
 "TODO write appropriate file
 autocmd BufRead ^a nmap <buffer> <cr> :e!<cr>
+
