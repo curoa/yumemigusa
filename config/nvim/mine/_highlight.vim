@@ -36,14 +36,14 @@ hi link @field Normal
 hi link @attribute PreProc
 hi @text.variable guifg=#aaaaaa
 
-hi @annotation.wip guibg=#f9344c guifg=black
-hi @annotation.todo guibg=#df4c94 guifg=black
-hi @annotation.fix guibg=#fc4e32 guifg=black
-hi @annotation.note guibg=#51b8e1 guifg=black
-hi @annotation.xxx guibg=#f9344c guifg=black
-hi @annotation.test guibg=#20c5af guifg=black
-hi @annotation.hack guibg=#a45aaa guifg=black
-hi @annotation.error guibg=#f9344c guifg=black
+hi @annotation.wip guibg=#f9344c guifg=#222222
+hi @annotation.todo guibg=#f9344c guifg=#222222
+hi @annotation.fix guibg=#fc4e32 guifg=#222222
+hi @annotation.note guibg=#51b8e1 guifg=#222222
+hi @annotation.xxx guibg=#f9344c guifg=#222222
+hi @annotation.test guibg=#20c5af guifg=#222222
+hi @annotation.hack guibg=#a45aaa guifg=#222222
+hi @annotation.error guibg=#f9344c guifg=#222222
 
 " Useful commands
 " :TSHighlightCapturesUnderCursor

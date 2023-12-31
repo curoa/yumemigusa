@@ -1,8 +1,8 @@
 ;; extends
 
-;WIP will fix before release
-;TODO tasks to do when you have time
-;FIX there are known bug
+;WIP not work now because wip
+;TODO tasks to do before release
+;FIX tasks to do when you have time
 ;NOTE info why implemented like this 
 ;XXX danger! it works but i don't know logic
 ;TEST you should test after

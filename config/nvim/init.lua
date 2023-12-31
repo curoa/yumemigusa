@@ -15,6 +15,3 @@ vim.cmd('source ~/.config/nvim/_init.vim')
 -- vim -V # read verbose level ref. https://neovim.io/doc/user/options.html#'verbose'
 -- :checkhealth hoge
 
--- TODO
--- TODO etc highlight
-

@@ -15,3 +15,4 @@ sed -i -s "s/=red/=#f9344c/" _highlight.vim check_my_color.vim
 sed -i -s "s/=sunset/=#fc4e32/" _highlight.vim check_my_color.vim
 sed -i -s "s/=orange/=#cc7b10/" _highlight.vim check_my_color.vim
 sed -i -s "s/=solid/=#aaaaaa/" _highlight.vim check_my_color.vim
+sed -i -s "s/=dark/=#222222/" _highlight.vim check_my_color.vim
