@@ -36,3 +36,22 @@ hi link @field Normal
 hi link @attribute PreProc
 hi @text.variable guifg=#aaaaaa
 
+hi @annotation.wip guibg=#f9344c guifg=black
+hi @annotation.todo guibg=#df4c94 guifg=black
+hi @annotation.fix guibg=#fc4e32 guifg=black
+hi @annotation.note guibg=#51b8e1 guifg=black
+hi @annotation.xxx guibg=#f9344c guifg=black
+hi @annotation.test guibg=#20c5af guifg=black
+hi @annotation.hack guibg=#a45aaa guifg=black
+hi @annotation.error guibg=#f9344c guifg=black
+
+" Useful commands
+" :TSHighlightCapturesUnderCursor
+" :TSPlaygraundToggle # use after TSHighlightCapturesUnderCursor
+" :SyntaxInfo
+
+" Useful sites in setting highlight by treesitter
+" https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#adding-queries
+" https://zenn.dev/monaqa/articles/2021-12-22-vim-nvim-treesitter-highlight
+" https://zenn.dev/vim_jp/articles/2022-12-25-vim-nvim-treesitter-2022-changes
+" https://tree-sitter.github.io/tree-sitter/using-parsers#pattern-matching-with-queries

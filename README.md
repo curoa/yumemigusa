@@ -41,7 +41,7 @@ pyenv  # install dependencies ref. https://github.com/pyenv/pyenv#install-python
 poetry  
 
 nvim  
-TSInstall python bash html htmldjango cpp json yaml javascript lua vim
+TSInstall python bash html htmldjango cpp json yaml javascript lua vim comment
 
 
 イヤホンを接続していても、デフォルトで hdmi から音声出力
