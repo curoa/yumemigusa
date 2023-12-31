@@ -3,7 +3,7 @@
 ;WIP not work now because wip
 ;TODO tasks to do before release
 ;FIX tasks to do when you have time
-;NOTE info why implemented like this 
+;NOTE info why implemented like this
 ;XXX danger! it works but i don't know logic
 ;TEST you should test after
 ;HACK you can improve
