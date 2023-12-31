@@ -1,0 +1,2 @@
+# fix funny space at line end
+sed -i "s/ \+$//" `git status | grep "	" | grep -v .md$ | sed "s/modified://"`
