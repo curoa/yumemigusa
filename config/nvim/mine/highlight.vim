@@ -14,6 +14,7 @@ hi TabLineSel guibg=black
 hi TabLine gui=NONE guifg=white guibg=Gray
 hi TabLineFill guibg=LightGray
 
+"hi Normal guifg=#aaaaaa " `hi Normal NONE` is better, because it does not overwrite other highlight
 hi Comment guifg=blue
 hi Constant guifg=ruby
 hi String guifg=violet
@@ -33,4 +34,5 @@ hi link @parameter Strong
 hi link @variable Normal
 hi link @field Normal
 hi link @attribute PreProc
+hi @text.variable guifg=solid
 

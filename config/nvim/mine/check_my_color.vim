@@ -22,8 +22,12 @@ syntax match _sunset /_sunset/
 hi _sunset guifg=#FC4E32
 syntax match _orange /_orange/
 hi _orange guifg=#cc7b10
+syntax match _solid /_solid/
+hi solid guifg=#aaaaaa
 
-" source %
-let dummy _yellow _lime _green _teal _aqua _blue _grape _violet _ruby _red _sunset _orange
+" Usage
+" vim --noplugin check_my_color.vim # `--noplugin` disable treesitter from stopping vim regex highlight
+" :source %
+let dummy _yellow _lime _green _teal _aqua _blue _grape _violet _ruby _red _sunset _orange _solid
 
 

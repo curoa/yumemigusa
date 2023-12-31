@@ -12,7 +12,10 @@ vim.cmd('source ~/.config/nvim/_init.vim')
 -- below are useful
 -- :scriptnames
 -- :TSHighlightCapturesUnderCursor
+-- :TSPlaygraundToggle
 -- :SyntaxInfo
+-- vim --noplugin
+-- vim -V # read verbose level ref. https://neovim.io/doc/user/options.html#'verbose'
 
 -- TODO
 -- TODO etc highlight
