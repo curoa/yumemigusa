@@ -2,6 +2,7 @@
 -- ~/.config/nvim/
 -- ~/.config/nvim/lua/
 -- ~/.config/nvim/ftplugin/
+-- ~/yumemigusa/config/nvim/after/queries/comment/highlights.scm
 
 require "plugins"
 require "treesitter"

@@ -1,7 +1,7 @@
 " debug
-nnoremap <buffer> <space>dl ^"aDaprint("<c-r>a", <c-r>a) # debug
-nnoremap <buffer> <space>dp yypkIprint("<esc>A") # debug<esc>jIprint(<esc>A) # debug<esc>
-nnoremap <buffer> <space>do yypkIprint("<esc>A") # debug<esc>jIpp(<esc>A) # debug<esc>
+nnoremap <buffer> <space>dl ^"aDaprint('<c-r>a', <c-r>a) # debug
+nnoremap <buffer> <space>dp yypkIprint('<esc>A') # debug<esc>jIprint(<esc>A) # debug<esc>
+nnoremap <buffer> <space>do yypkIprint('<esc>A') # debug<esc>jIpp(<esc>A) # debug<esc>
 
 " loop
 inoremap <buffer> fo^ <esc>Ifor i in <esc>A:<esc>^ws
