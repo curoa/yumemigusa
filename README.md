@@ -57,3 +57,7 @@ pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo
 # write shell script to do above command, and add ubuntsu startup apps
 # you can search startup setting by "自動"
 ```
+
+
+google chrome で画面共有できないとき
+https://askubuntu.com/questions/1407494/screen-share-not-working-in-ubuntu-22-04-in-all-platforms-zoom-teams-google-m
