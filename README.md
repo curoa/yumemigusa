@@ -2,7 +2,7 @@ jp ubuntu
 https://www.ubuntulinux.jp/download
 
 apt update upgrade
-sudo apt install build-essential xsel
+sudo apt install build-essential xsel colordiff
 
 install chrome
 

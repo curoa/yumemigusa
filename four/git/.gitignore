@@ -5,3 +5,5 @@ log
 exec.sh
 
 __pycache__/
+out/*
+!out/.gitignore
