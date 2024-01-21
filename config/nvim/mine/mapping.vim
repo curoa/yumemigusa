@@ -58,6 +58,10 @@ inoremap <c-f> <c-r>"
 " omap
 omap w iw
 omap W iW
+"nnoremap dw dw
+"nnoremap dW dW
+"nnoremap cw cw
+"nnoremap cW cW
 
 
 " move

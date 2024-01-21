@@ -4,6 +4,7 @@
 ;TODO tasks to do before release
 ;FIX tasks to do when you have time
 ;NOTE info why implemented like this
+;INFO info you should attend
 ;XXX danger! it works but i don't know logic
 ;TEST you should test after
 ;HACK you can improve
@@ -17,6 +18,8 @@
  (#eq? @annotation.fix "FIX"))
 ("text" @annotation.note
  (#eq? @annotation.note "NOTE"))
+("text" @annotation.note
+ (#eq? @annotation.note "INFO"))
 ("text" @annotation.xxx
  (#eq? @annotation.xxx "XXX"))
 ("text" @annotation.test
@@ -26,7 +29,7 @@
 ("text" @annotation.error
  (#eq? @annotation.error "ERROR"))
 
-;FIX NOTE python not without #
+;FIX NOTE python not work without #
 ("text" @annotation.wip
  (#eq? @annotation.wip "#WIP"))
 ("text" @annotation.todo
@@ -35,6 +38,8 @@
  (#eq? @annotation.fix "#FIX"))
 ("text" @annotation.note
  (#eq? @annotation.note "#NOTE"))
+("text" @annotation.note
+ (#eq? @annotation.note "#INFO"))
 ("text" @annotation.xxx
  (#eq? @annotation.xxx "#XXX"))
 ("text" @annotation.test
