@@ -15,6 +15,8 @@ inoremap <buffer> n^ None
 inoremap <buffer> t^ True
 inoremap <buffer> f^ False
 inoremap <buffer> con^ continue
+inoremap <buffer> pd^ pickle.dump(obj, open(fpath, "wb"))
+inoremap <buffer> pl^ if os.path.exists(fpath):<cr>obj = pickle.load(open(fpath, "rb"))
 
 inoremap <buffer> ++ <space>+= 1
 inoremap <buffer> -- <space>-= 1
