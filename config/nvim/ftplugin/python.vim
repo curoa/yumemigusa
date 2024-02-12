@@ -6,6 +6,7 @@ nnoremap <buffer> <space>do yypkIprint('<esc>A') # debug<esc>jIpp(<esc>A) # debu
 " loop
 inoremap <buffer> fo^ <esc>Ifor i in <esc>A:<esc>^ws
 inoremap <buffer> en^ <esc>Ifor i in enumerate(<esc>A):<esc>^ws
+inoremap <buffer> zi^ <esc>Ifor i in zip(<esc>A):<esc>^ws
 inoremap <buffer> rn^ <esc>Ifor i in range(<esc>A):<esc>^ws
 
 " short
