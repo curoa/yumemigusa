@@ -56,8 +56,10 @@ inoremap <c-f> <c-r>"
 " https://github.com/kylechui/nvim-surround
 
 " omap
-omap w iw
-omap W iW
+nmap ysw ysiw
+nmap ysW ysiW
+"omap w iw
+"omap W iW
 "nnoremap dw dw
 "nnoremap dW dW
 "nnoremap cw cw

@@ -128,6 +128,8 @@ alias acomc="git commit -a -c HEAD"
 alias btmp="git reset HEAD^"
 alias lg="git lg"
 
+alias lo="libreoffice7.6"
+
 # http://zsh.sourceforge.net/Doc/Release/Completion-System.html#Completion-System
 # setopt no_flow_control # what's this?
 
