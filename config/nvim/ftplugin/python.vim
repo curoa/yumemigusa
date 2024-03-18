@@ -32,9 +32,10 @@ cnoremap <buffer> ci^ %s/^\(\s\+\)#\(.\+\) # debug$/\1\2 # debug/
 " move
 nnoremap <buffer> ( k:let @s = @/ \| :let @/ = "^\\s*def "<cr>N:let @/ = @s \| noh<cr>t(
 nnoremap <buffer> ) :let @s = @/ \| :let @/ = "^\\s*def "<cr>n:let @/ = @s \| noh<cr>t(
+nnoremap <buffer> <c-]> "ayiw/def <c-r>a<cr>:noh<cr>t(
 
 " macro
 nmap <buffer> _d^ f(bd0f(%C):<cr><esc>k==Idef <esc>o
 
 " util
-cnoremap <buffer> ch^ ~/cheetsheet/python/
+cnoremap <buffer> ch^ tabe ~/cheetsheet/python/mypyutil/<cr>
