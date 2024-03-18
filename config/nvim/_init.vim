@@ -1,6 +1,7 @@
 source ~/.config/nvim/mine/basic.vim
 source ~/.config/nvim/mine/mapping.vim
 source ~/.config/nvim/mine/_highlight.vim " ~/.config/nvim/mine/highlight.vim
+" ~/.config/nvim/mine/check_my_color
 source ~/.config/nvim/mine/syntaxinfo.vim
 
 "MEMO
@@ -9,5 +10,6 @@ source ~/.config/nvim/mine/syntaxinfo.vim
 "FIX write appropriate file. maybe in autoload directory, but not work for me
 autocmd BufRead ^a nnoremap <buffer> <cr> :e!<cr>
 autocmd BufWritePost highlight.vim  ! sh ~/.config/nvim/mine/sed_color_name.sh
-autocmd BufRead check_my_color.vim  nnoremap <buffer> <cr> :source %<cr>
 
+autocmd BufEnter check_my_color :source %:h/check_my_color.vim
+"autocmd BufEnter check_my_color nnoremap <buffer> <cr> :source %:h/check_my_color.vim<cr>

@@ -28,9 +28,5 @@ syntax match _dark /_dark/
 hi _dark guifg=#222222 guibg=#aaaaaa
 
 " Usage
-" vim --noplugin check_my_color.vim # `--noplugin` disable treesitter from stopping vim regex highlight
+" vim --noplugin check_my_color # `--noplugin` disable treesitter from stopping vim regex highlight
 " :source % # or press <cr>
-_yellow _lime _green _teal _aqua _blue _grape _violet _ruby _red _sunset _orange
-_solid _dark
-
-

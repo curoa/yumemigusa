@@ -13,6 +13,7 @@ hi Pmenu guifg=white guibg=Gray
 hi TabLineSel guibg=black
 hi TabLine gui=NONE guifg=white guibg=Gray
 hi TabLineFill guibg=LightGray
+match errorMsg /\s\+$/
 
 "hi Normal guifg=#aaaaaa " `hi Normal NONE` is better, because it does not overwrite other highlight
 hi Comment guifg=blue
