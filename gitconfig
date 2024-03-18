@@ -6,8 +6,10 @@
 	st = status
 	br = branch
 	bra = branch -a
+	s = switch
+	sc = switch -c
 	co = checkout
-	cb = checkout -b
+	#cb = checkout -b
 	sh = stash
 	sl = stash list
 	sp = stash pop
