@@ -14,7 +14,7 @@ hi TabLineSel guibg=black
 hi TabLine gui=NONE guifg=white guibg=Gray
 hi TabLineFill guibg=LightGray
 hi TrailingSpace guibg=ruby
-match TrailingSpace /\s\+$/
+"match TrailingSpace /\s\+$/
 
 "hi Normal guifg=#aaaaaa " `hi Normal NONE` is better, because it does not overwrite other highlight
 hi Comment guifg=blue

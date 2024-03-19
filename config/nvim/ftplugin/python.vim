@@ -38,4 +38,4 @@ nnoremap <buffer> <c-]> "ayiw/def <c-r>a<cr>:noh<cr>t(
 nmap <buffer> _d^ f(bd0f(%C):<cr><esc>k==Idef <esc>o
 
 " util
-cnoremap <buffer> ch^ tabe ~/cheetsheet/python/mypyutil/<cr>
+cnoremap <buffer> ch^ tabe ~/cheetsheet/python/mypyutil/

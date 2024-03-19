@@ -1,4 +1,4 @@
-export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin
 
 # Lines configured by zsh-newuser-install
 setopt share_history
