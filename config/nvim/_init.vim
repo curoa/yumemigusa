@@ -8,10 +8,14 @@ source ~/.config/nvim/mine/syntaxinfo.vim
 " O delay `timeoutlen`, `ttimeoutlen`
 
 "FIX write appropriate file. maybe in autoload directory, but not work for me
-autocmd BufEnter * syntax match TrailingSpace /\s\+$/
-autocmd BufEnter *.md syntax clear TrailingSpace
 autocmd BufRead ^a nnoremap <buffer> <cr> :e!<cr>
 autocmd BufWritePost highlight.vim  ! sh ~/.config/nvim/mine/sed_color_name.sh
 
 autocmd BufEnter check_my_color :source %:h/check_my_color.vim
 "autocmd BufEnter check_my_color nnoremap <buffer> <cr> :source %:h/check_my_color.vim<cr>
+
+" use TrailingSpace as default
+autocmd BufEnter * syntax match TrailingSpace /\s\+$/
+autocmd BufEnter *[(.md)|(.vim)] syntax clear TrailingSpace
+autocmd TermOpen * syntax clear TrailingSpace
+
