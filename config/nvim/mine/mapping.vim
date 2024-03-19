@@ -11,7 +11,7 @@ endtry
 "cnoremap mine^ tabe ~/.config/nvim<cr>9j
 cnoremap %% %:h
 nnoremap gm :wa \| !echo -e '\e[38;5;0m\e[48;5;51m --- make ---  \e[m'; make -j
-nnoremap <space>f :wa \| tabe \| terminal echo -e '\e[38;5;0m\e[48;5;51m --- exec ---  \e[m';./exec.sh<cr><cr>
+nnoremap <space>f :wa \| tabe \| terminal echo -e '\e[38;5;0m\e[48;5;51m --- exec --- \e[m';./exec.sh<cr><cr>
 nnoremap <space>s :wa \| sh
 
 
