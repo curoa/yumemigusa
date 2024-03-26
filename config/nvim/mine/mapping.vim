@@ -12,7 +12,8 @@ endtry
 cnoremap %% %:h
 nnoremap gm :wa \| !echo -e '\e[38;5;0m\e[48;5;51m --- make ---  \e[m'; make -j
 nnoremap <space>f :wa \| tabe \| terminal echo -e '\e[38;5;0m\e[48;5;51m --- exec --- \e[m';./exec.sh<cr><cr>
-nnoremap <space>s :wa \| sh
+"nnoremap <space>f :terminal<cr>Afo
+nnoremap <space>s :terminal<cr>A
 
 
 " tab
@@ -58,6 +59,8 @@ inoremap <c-f> <c-r>"
 " omap
 nmap ysw ysiw
 nmap ysW ysiW
+omap i2 i"
+omap a2 a"
 "omap w iw
 "omap W iW
 "nnoremap dw dw
