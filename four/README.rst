@@ -21,7 +21,7 @@ sentence1.
 sentence2.
 These are same line, that is, there is no new line.
 
-`Link text <https://domain.invalid/>`_ 
+`Link text <https://domain.invalid/>`_
 you need space before the opening angle bracket.
 
 you can split link `a link`_.
