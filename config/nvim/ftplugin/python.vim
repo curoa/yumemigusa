@@ -24,7 +24,7 @@ inoremap <buffer> ++ <space>+= 1
 inoremap <buffer> -- <space>-= 1
 
 " format
-nnoremap <buffer> == ^"aD"sddko<c-r>a<esc>
+"nnoremap <buffer> == ^"aD"sddko<c-r>a<esc>
 
 cnoremap <buffer> co^ %s/^\(\s\+\)\([^#[:blank:]].\+\) # debug$/\1#\2 # debug/
 cnoremap <buffer> ci^ %s/^\(\s\+\)#\(.\+\) # debug$/\1\2 # debug/

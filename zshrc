@@ -59,7 +59,7 @@ alias llt='ls -tl'
 alias mv='mv -b --suffix=_$(date +%Y%m%d).bk'
 alias cp='cp -b --suffix=_$(date +%Y%m%d).bk'
 alias grep="grep --color=auto"
-alias grepy="grep --color=auto -rn --include='*.py' . -e"
+alias grepy="grep --color=auto -rn --include='*.py' * -e"
 alias pgrep="grep --color=never"
 alias vimgrep="grep -n --color=never"
 alias less="less -SR" # S : chop long lines, R : color
