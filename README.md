@@ -1,26 +1,54 @@
 jp ubuntu
 https://www.ubuntulinux.jp/download
 
-apt update upgrade
-sudo apt install build-essential xsel colordiff
+install Ubuntu
+
+partition
+```
+ssd
+efi system partition 4GiB=4295MB
+ext4 /
+
+hdd
+ext4 /home
+```
+なぜか hdd が初期化されずに、/home が保存されてた。嬉しい。2024/04/09
+
+with third party software
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install build-essential xsel colordiff curl
+```
 
 install chrome
+たぶんここが正しい
+http://cha.la.coocan.jp/wp/2023/06/24/ubuntu-google-chrome-install/
 
 文字サイズ
 tweaks で 倍率 2.0
 
 可能な限りシンボリックリンク  
-local -> ~/.local  
+local/bin -> ~/.local/bin  
 gitconfig -> ~/.gitconfig  
 zshrc -> ~/.zshrc  
 zsh -> ~/.zsh  
 config -> ~/.config  
-ssh_config -> ~/.ssh/config
+ssh_config -> ~/.ssh/config  
 
-install terminator
+```
+sudo apt install terminator
+```
 
-install zsh
+```
+sudo apt install zsh  
+chsh -s $(which zsh)  
+```
 
+```
+sudo apt install git
+```
 set ssh for github, and clone this repository
 
 キーボード設定
@@ -41,7 +69,19 @@ pyenv  # install dependencies ref. https://github.com/pyenv/pyenv#install-python
 poetry  
 
 nvim  
+treesitter が neovim 0.9.2 以降しかサポートしてない
+Ubuntu 22 では 素直に入れると 0.7.2 が入る
+Ubuntu 24 では 0.9.5 以降が入る気がしている
+Ubuntu 24 のリリースは 2024/04/25 らしい
+なのでソースコードから neovim をインストールした 2024/04/10
+    stable を入れた
+    nvim-linux64.deb を cpack で作って、 apt install した
+ref. https://github.com/neovim/neovim/blob/master/BUILD.md
+ref. https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file
+:PackerInstall, :PackerUpdate, :PackerCompile # よく分かってない  
+```
 TSInstall python bash html htmldjango cpp json yaml javascript lua vim comment
+```
 
 
 イヤホンを接続していても、デフォルトで hdmi から音声出力
@@ -61,3 +101,10 @@ pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo
 
 google chrome で画面共有できないとき
 https://askubuntu.com/questions/1407494/screen-share-not-working-in-ubuntu-22-04-in-all-platforms-zoom-teams-google-m
+
+TODO
+cuda
+前回 2024/4 に cuda を入れたときは shell の描画がリフレッシュされない問題が発生した。
+cuda のせいだとは断言できないが、タイミング的にそんな気がしている
+
+

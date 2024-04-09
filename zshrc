@@ -45,6 +45,8 @@ else
 fi
 #random_background
 
+alias vi='/etc/alternatives/vi'
+#alias vi='/usr/bin/vim.tiny'
 #alias vim='vim -p'
 alias vim='nvim -p'
 alias view='nvim -R -p'
