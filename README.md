@@ -75,9 +75,9 @@ Ubuntu 22 では 素直に入れると 0.7.2 が入る
 Ubuntu 24 では 0.9.5 以降が入る気がしている  
 Ubuntu 24 のリリースは 2024/04/25 らしい  
 なのでソースコードから neovim をインストールした 2024/04/10  
-ref. https://github.com/neovim/neovim/blob/master/BUILD.md  
     stable を入れた  
     nvim-linux64.deb を cpack で作って、 apt install した  
+    ref. https://github.com/neovim/neovim/blob/master/BUILD.md  
 :PackerInstall, :PackerUpdate, :PackerCompile # よく分かってない  
 ```
 TSInstall python bash html htmldjango cpp json yaml javascript lua vim comment
