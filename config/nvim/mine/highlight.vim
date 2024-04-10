@@ -31,12 +31,14 @@ hi Todo guibg=red
 
 hi link @function.builtin @function
 hi link @constant.builtin @constant
-hi link @constructor Constructor 
+hi link @constructor Constructor
 hi link @parameter Strong
 hi link @variable Normal
 hi link @field Normal
 hi link @attribute PreProc
+hi link @keyword.import PreProc
 hi @text.variable guifg=solid
+hi @string.special.url guifg=blue gui=underline
 
 hi @annotation.wip guibg=red guifg=#222222
 hi @annotation.todo guibg=red guifg=#222222
