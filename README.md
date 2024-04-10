@@ -19,7 +19,7 @@ with third party software
 ```
 sudo apt update
 sudo apt upgrade
-sudo apt install build-essential xsel colordiff curl
+sudo apt install build-essential xsel colordiff curl sysstat
 ```
 
 install chrome
