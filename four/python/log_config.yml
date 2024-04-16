@@ -38,10 +38,10 @@ handlers:
     filename: log
 loggers:
   __main__:
+    level: INFO # DEBUG INFO WARNING ERROR CRITICAL
+    handlers: [console, file]
+    propagate: yes
+  module.name:
     level: INFO
     handlers: [console, file]
     propagate: yes
-root:
-  level: INFO
-  handlers: [console, file]
-  propagate: yes
