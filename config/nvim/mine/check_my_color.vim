@@ -22,6 +22,10 @@ syntax match _sunset /_sunset/
 hi _sunset guifg=#FC4E32
 syntax match _orange /_orange/
 hi _orange guifg=#cc7b10
+
+syntax match _sand /_sand/
+hi _sand guifg=#f0cfac
+
 syntax match _solid /_solid/
 hi _solid guifg=#aaaaaa
 syntax match _dark /_dark/

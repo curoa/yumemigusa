@@ -1,5 +1,5 @@
 " copy highlight.vim to _highlight.vim with sed_color_name
-" check_my_color.vim
+" check_my_color
 " : ! sh ~/.config/nvim/mine/sed_color_name.sh
 set termguicolors
 
@@ -28,6 +28,12 @@ hi Type gui=bold guifg=#38ba68
 hi Constructor gui=nocombine,NONE guifg=#20c5af
 hi Special guifg=#cc7b10
 hi Todo guibg=#f9344c
+
+" written for html in jsx, tsx
+hi link @tag @function
+hi @tag.builtin guifg=#f0cfac
+hi @tag.delimiter guifg=#f0cfac gui=nocombine,NONE
+hi @tag.attribute guifg=#508fe2
 
 hi link @function.builtin @function
 hi link @constant.builtin @constant
