@@ -9,7 +9,8 @@ source ~/.config/nvim/mine/syntaxinfo.vim
 
 "FIX write appropriate file. maybe in autoload directory, but not work for me
 autocmd BufRead ^a nnoremap <buffer> <cr> :e!<cr>
-autocmd BufWritePost highlight.vim  ! sh ~/.config/nvim/mine/sed_color_name.sh
+autocmd BufWritePost highlight.vim ! sh ~/.config/nvim/mine/sed_color_name.sh
+autocmd BufWritePost highlight.vim source ~/.config/nvim/mine/_highlight.vim
 
 autocmd BufEnter check_my_color :source %:h/check_my_color.vim
 "autocmd BufEnter check_my_color nnoremap <buffer> <cr> :source %:h/check_my_color.vim<cr>
