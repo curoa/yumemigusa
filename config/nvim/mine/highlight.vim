@@ -44,7 +44,10 @@ hi link @field Normal
 hi link @attribute PreProc
 hi link @keyword.import PreProc
 hi @text.variable guifg=solid
-hi @string.special.url guifg=blue gui=underline
+hi @string.special.url guifg=aqua gui=underline
+
+hi @markup.heading guifg=blue
+hi link @markup.list Delimiter
 
 hi @annotation.wip guibg=red guifg=#222222
 hi @annotation.todo guibg=red guifg=#222222

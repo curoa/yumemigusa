@@ -44,7 +44,10 @@ hi link @field Normal
 hi link @attribute PreProc
 hi link @keyword.import PreProc
 hi @text.variable guifg=#aaaaaa
-hi @string.special.url guifg=#508fe2 gui=underline
+hi @string.special.url guifg=#51b8e1 gui=underline
+
+hi @markup.heading guifg=#508fe2
+hi link @markup.list Delimiter
 
 hi @annotation.wip guibg=#f9344c guifg=#222222
 hi @annotation.todo guibg=#f9344c guifg=#222222
