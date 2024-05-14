@@ -28,6 +28,7 @@ hi Type gui=bold guifg=#38ba68
 hi Constructor gui=nocombine,NONE guifg=#20c5af
 hi Special guifg=#cc7b10
 hi Todo guibg=#f9344c
+hi Title guifg=#508fe2
 
 " written for html in jsx, tsx
 hi link @tag @function
@@ -45,9 +46,6 @@ hi link @attribute PreProc
 hi link @keyword.import PreProc
 hi @text.variable guifg=#aaaaaa
 hi @string.special.url guifg=#51b8e1 gui=underline
-
-hi @markup.heading guifg=#508fe2
-hi link @markup.list Delimiter
 
 hi @annotation.wip guibg=#f9344c guifg=#222222
 hi @annotation.todo guibg=#f9344c guifg=#222222

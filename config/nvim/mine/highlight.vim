@@ -28,6 +28,7 @@ hi Type gui=bold guifg=green
 hi Constructor gui=nocombine,NONE guifg=teal
 hi Special guifg=orange
 hi Todo guibg=red
+hi Title guifg=blue
 
 " written for html in jsx, tsx
 hi link @tag @function
@@ -45,9 +46,6 @@ hi link @attribute PreProc
 hi link @keyword.import PreProc
 hi @text.variable guifg=solid
 hi @string.special.url guifg=aqua gui=underline
-
-hi @markup.heading guifg=blue
-hi link @markup.list Delimiter
 
 hi @annotation.wip guibg=red guifg=#222222
 hi @annotation.todo guibg=red guifg=#222222
