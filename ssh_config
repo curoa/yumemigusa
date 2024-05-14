@@ -1,3 +1,11 @@
 Host conoha
+	Hostname 160.251.179.26
+	User afforest
+
+Host conoha_root
+	Hostname 160.251.179.26
+	User root
+
+Host old_conoha
 	Hostname 163.44.170.128
 	User afforest
