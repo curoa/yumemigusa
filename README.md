@@ -47,6 +47,9 @@ chsh -s $(which zsh)
 ```
 
 ```
+# ref. https://git-scm.com/download/linux
+add-apt-repository ppa:git-core/ppa
+apt update
 sudo apt install git
 ```
 set ssh for github, and clone this repository
@@ -66,7 +69,8 @@ https://support.google.com/chrome_webstore/answer/3060053?hl=ja#zippy=%2Cchrome-
 これをしたり、URL からアプリとして開くとかしてるうまくいった。
 
 pyenv  # install dependencies ref. https://github.com/pyenv/pyenv#install-python-build-dependencies  
-poetry  
+poetry  # ref. https://python-poetry.org/docs/#installing-with-the-official-installer  
+`curl -sSL https://install.python-poetry.org | python3 -`  
 
 nvim  
 treesitter が neovim 0.9.2 以降しかサポートしてない  
