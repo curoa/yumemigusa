@@ -1,10 +1,10 @@
 [global_config]
+  suppress_multiple_term_dialog = True
 [keybindings]
   go_up = <Primary><Shift>k
   go_down = <Primary><Shift>j
   go_left = <Primary><Shift>h
   go_right = <Primary><Shift>l
-  preferences_keybindings = ""
 [profiles]
   [[default]]
     background_darkness = 0.85
