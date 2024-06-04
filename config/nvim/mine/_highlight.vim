@@ -8,6 +8,7 @@ hi CursorLine gui=NONE guibg=NONE
 hi LineNr guifg=#508fe2
 hi CursorLineNr gui=bold guifg=#51b8e1
 hi Search guifg=DarkGray guibg=#fff231
+hi Match guifg=white guibg=#cc7b10
 hi PmenuSel guifg=white guibg=#a45aaa
 hi Pmenu guifg=white guibg=Gray
 hi TabLineSel guibg=black
