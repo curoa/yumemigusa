@@ -3,6 +3,12 @@ nnoremap <space>q :q<cr>
 nnoremap <space>w :wq<cr>
 nnoremap <space>a :wqa<cr>
 command! Mine tabe ~/.config/nvim/init.lua
+command! This call OpenFTPlugin()
+function! OpenFTPlugin()
+    let filetype = &filetype
+    let ftplugin_path =  '~/.config/nvim/ftplugin/' . filetype . '.vim'
+	execute 'tabedit ' . ftplugin_path
+endfunction
 command! Remine source ~/.config/nvim/init.lua 
 try " ignore 'Rexplore is not exists' Error raised when 2nd delcommand
 	delcommand Rexplore " delete Rexplore to make easier type Remine
