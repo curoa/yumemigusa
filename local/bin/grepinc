@@ -1,2 +1,4 @@
 #!/bin/zsh
-grep --color=auto -r --include="$1" * -e ${@:2}
+echo $1
+echo ${@:2}
+grep --color=auto -rn --include="$1" * -e ${@:2}
