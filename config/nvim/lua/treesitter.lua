@@ -7,6 +7,9 @@ require'nvim-treesitter.configs'.setup {
 		-- Instead of true it can also be a list of languages
 		additional_vim_regex_highlighting = {"markdown"},
 	},
+	indent = {
+		enable = true,
+	},
 }
 
 require'nvim-treesitter.configs'.setup {
