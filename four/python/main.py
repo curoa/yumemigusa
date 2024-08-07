@@ -7,5 +7,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
 
-    print('\033[32m' + 'end' + '\033[0m') # ]] fix indent for vim
+    print('\033[32m' + 'end' + '\033[0m')
 
