@@ -1,6 +1,8 @@
 Host conoha
 	Hostname 160.251.179.26
 	User afforest
+	ServerAliveInterval 60
+	ServerAliveCountMax 5
 
 Host conoha_root
 	Hostname 160.251.179.26

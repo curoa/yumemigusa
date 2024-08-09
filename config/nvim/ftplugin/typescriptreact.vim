@@ -1,5 +1,5 @@
 " debug
-nnoremap <buffer> <space>dl Iconsole.log(<esc>A); // debug
+nnoremap <buffer> <space>dl ^"aDaconsole.log('<c-r>a', <c-r>a) // debug
 nnoremap <buffer> <space>dp yypkIconsole.log('<esc>A'); // debug<esc>jIconsole.log(<esc>A); // debug<esc>
 
 " map
@@ -23,6 +23,8 @@ inoremap <buffer> t^ true
 inoremap <buffer> f^ false
 inoremap <buffer> n^ null
 inoremap <buffer> u^ undefined
+
+noremap <buffer> <space>; A;<esc>
 
 " if
 inoremap <buffer> if^ if () {<cr>}<esc>kf(a
