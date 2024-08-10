@@ -22,7 +22,13 @@ sudo apt upgrade
 sudo apt install build-essential xsel colordiff curl sysstat
 ```
 
-sudo apt install nvidia-driver-XXX
+install Nvidia driver
+`sudo apt install nvidia-driver-XXX`
+XXX はバージョン以下で正しそうな番号を確認
+https://www.nvidia.com/ja-jp/drivers/
+`ubuntu-drivers devices`
+    open じゃないのが良さそう
+    recommended は当てにならない
 
 reboot
 
