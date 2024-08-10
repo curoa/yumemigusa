@@ -23,11 +23,14 @@ hi Constant guifg=ruby
 hi String guifg=violet
 hi Strong gui=bold
 hi Identifier guifg=aqua
+hi Operator guifg=yellow
+hi Function guifg=aqua
 hi Statement guifg=yellow
 hi PreProc guifg=grape
 hi Type gui=bold guifg=green
 hi Constructor gui=nocombine,NONE guifg=teal
 hi Special guifg=orange
+hi Delimiter guifg=orange
 hi Todo guibg=red
 hi Title guifg=blue
 
@@ -39,9 +42,11 @@ hi @tag.attribute guifg=blue
 
 hi link @function.builtin @function
 hi link @constant.builtin @constant
+hi link @type.builtin @type
 hi link @constructor Constructor
 hi link @parameter Strong
-hi link @variable Normal
+"hi link @variable Normal
+hi @variable guifg=solid
 hi link @field Normal
 hi link @attribute PreProc
 hi link @keyword.import PreProc

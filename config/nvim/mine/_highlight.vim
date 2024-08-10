@@ -23,11 +23,14 @@ hi Constant guifg=#df4c94
 hi String guifg=#a45aaa
 hi Strong gui=bold
 hi Identifier guifg=#51b8e1
+hi Operator guifg=#fff231
+hi Function guifg=#51b8e1
 hi Statement guifg=#fff231
 hi PreProc guifg=#7c76cc
 hi Type gui=bold guifg=#38ba68
 hi Constructor gui=nocombine,NONE guifg=#20c5af
 hi Special guifg=#cc7b10
+hi Delimiter guifg=#cc7b10
 hi Todo guibg=#f9344c
 hi Title guifg=#508fe2
 
@@ -39,9 +42,11 @@ hi @tag.attribute guifg=#508fe2
 
 hi link @function.builtin @function
 hi link @constant.builtin @constant
+hi link @type.builtin @type
 hi link @constructor Constructor
 hi link @parameter Strong
-hi link @variable Normal
+"hi link @variable Normal
+hi @variable guifg=#aaaaaa
 hi link @field Normal
 hi link @attribute PreProc
 hi link @keyword.import PreProc
