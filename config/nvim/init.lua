@@ -12,6 +12,7 @@ vim.cmd('source ~/.config/nvim/_init.vim')
 -- MEMO
 -- below are useful
 -- :scriptnames
+-- :redir hoge.txt :echo fuga :redir END
 -- vim --noplugin
 -- vim -V # read verbose level ref. https://neovim.io/doc/user/options.html#'verbose'
 -- :checkhealth hoge

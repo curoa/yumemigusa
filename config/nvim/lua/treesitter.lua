@@ -10,6 +10,7 @@ require'nvim-treesitter.configs'.setup {
 	indent = {
 		enable = true,
 	},
+	-- ensure_installed = {"python", "bash", "html", "tsx", "htmldjango", "cpp", "json", "yaml", "lua", "vim", "comment"}
 }
 
 require'nvim-treesitter.configs'.setup {

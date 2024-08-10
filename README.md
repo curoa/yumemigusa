@@ -104,9 +104,6 @@ nvim
 ref. https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2  
 treesitter が neovim 0.9.2 以降しかサポートしてない  
 :PackerInstall, :PackerUpdate, :PackerCompile # よく分かってない  
-```
-TSInstall python bash html typescript tsx htmldjango cpp json yaml javascript lua vim commentjsx
-```
 
 
 イヤホンを接続していても、デフォルトで hdmi から音声出力
