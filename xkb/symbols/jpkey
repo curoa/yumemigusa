@@ -1,0 +1,8 @@
+hidden partial modifier_keys
+xkb_symbols "util" {
+    key <AE13> {         [       dollar,             bar ] };
+    key <MUHE> { [ Control_L, Control_L ] };
+    key <HENK> { [ Escape, Escape ] };
+    key <HKTG> { [ underscore, underscore ] };
+    modifier_map Control { <MUHE> };
+};

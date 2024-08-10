@@ -1,0 +1,22 @@
+// ref. https://wiki.archlinux.org/title/X_keyboard_extension#Caps_hjkl_as_vimlike_arrow_keys
+// ref. https://wiki.archlinux.org/title/X_keyboard_extension#Level3
+xkb_symbols "caps_arrow" {
+    //key <LWIN> { [ ISO_Level3_Shift ] };
+    key <AC06> {
+        type= "THREE_LEVEL",
+        symbols= [               h,               H, Left]
+    };
+    key <AC07> {
+        type= "THREE_LEVEL",
+        symbols= [               j,               J,               Down]
+    };
+    key <AC08> {
+        type= "THREE_LEVEL",
+        symbols= [               k,               K,               Up]
+    };
+    key <AC09> {
+        type= "THREE_LEVEL",
+        symbols= [               l,               L,               Right]
+    };
+    modifier_map Mod5 { <CAPS> };
+};
