@@ -133,6 +133,13 @@ alias lg="git lg"
 
 alias lo="libreoffice"
 
+# neovim
+# ref. https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2
+# curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+# sudo rm -rf /opt/nvim
+# sudo tar -C /opt -xzf nvim-linux64.tar.gz
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
 # http://zsh.sourceforge.net/Doc/Release/Completion-System.html#Completion-System
 # setopt no_flow_control # what's this?
 

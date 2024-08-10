@@ -22,42 +22,62 @@ sudo apt upgrade
 sudo apt install build-essential xsel colordiff curl sysstat
 ```
 
+sudo apt install nvidia-driver-XXX
+
+reboot
+
 install chrome
 たぶんここが正しい
 http://cha.la.coocan.jp/wp/2023/06/24/ubuntu-google-chrome-install/
 
 文字サイズ
+`sudo apt install gnome-tweaks`
 tweaks で 倍率 2.0
 
-可能な限りシンボリックリンク  
-local/bin -> ~/.local/bin  
-gitconfig -> ~/.gitconfig  
-zshrc -> ~/.zshrc  
-zsh -> ~/.zsh  
-config -> ~/.config  
-ssh_config -> ~/.ssh/config  
+.ssh の　key を移す
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/id_rsa
+chmod 644 ~/.ssh/id_rsa.pub
+chmod 644 ~/.ssh/known_hosts
+
+
+```
+# ref. https://git-scm.com/download/linux
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update
+sudo apt install git
+```
+set ssh for github, and clone this repository
+`git clone https://github.com/curoa/yumemigusa.git`
+
+シンボリックリンク  
+```
+cd
+ln -s ~/yumemigusa/local/bin ~/.local/bin
+ln -s ~/yumemigusa/gitconfig ~/.gitconfig
+ln -s ~/yumemigusa/zshrc ~/.zshrc
+ln -s ~/yumemigusa/zsh ~/.zsh
+ln -s ~/yumemigusa/config/* ~/.config
+ln -s ~/yumemigusa/ssh_config ~/.ssh/config
+```
+
+cvs 設定
+`mkdir -p ~/.local/var/cv_data/`
 
 ```
 sudo apt install terminator
 ```
 
 ```
-sudo apt install zsh  
-chsh -s $(which zsh)  
+sudo apt install zsh
+chsh -s $(which zsh)
 ```
-
-```
-# ref. https://git-scm.com/download/linux
-add-apt-repository ppa:git-core/ppa
-apt update
-sudo apt install git
-```
-set ssh for github, and clone this repository
 
 キーボード設定
 https://qiita.com/curoa/items/9bf52d90a8f60beb5c00
 
 ディレクトリを英語に
+`LANG=C xdg-user-dirs-gtk-update`
 https://www.rough-and-cheap.jp/linux/ubuntu-change-xdg-directory-name/
 
 
@@ -65,6 +85,7 @@ https://www.rough-and-cheap.jp/linux/ubuntu-change-xdg-directory-name/
 https://drive.google.com/drive/folders/0B1BdHf2G96URfnpacTdWbmZPdGk4el91cjFFSC10QmJKSHVLSXBwdWhNMExzcDFfcEFMVjA?resourcekey=0-D0qaGYe7k3PBjBuA2wS-aQ
 
 youtube, meet as app
+chrome で開いて、URLバーからアプリインストール。一回閉じて、windows key から検索で起動してタスクバーにお気に入り登録
 https://support.google.com/chrome_webstore/answer/3060053?hl=ja#zippy=%2Cchrome-%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B9%E3%83%88%E3%82%A2%E3%81%8B%E3%82%89%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B
 これをしたり、URL からアプリとして開くとかしてるうまくいった。
 
@@ -73,18 +94,11 @@ poetry  # ref. https://python-poetry.org/docs/#installing-with-the-official-inst
 `curl -sSL https://install.python-poetry.org | python3 -`  
 
 nvim  
+ref. https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2  
 treesitter が neovim 0.9.2 以降しかサポートしてない  
-ref. https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file  
-Ubuntu 22 では 素直に入れると 0.7.2 が入る  
-Ubuntu 24 では 0.9.5 以降が入る気がしている  
-Ubuntu 24 のリリースは 2024/04/25 らしい  
-なのでソースコードから neovim をインストールした 2024/04/10  
-    stable を入れた  
-    nvim-linux64.deb を cpack で作って、 apt install した  
-    ref. https://github.com/neovim/neovim/blob/master/BUILD.md  
 :PackerInstall, :PackerUpdate, :PackerCompile # よく分かってない  
 ```
-TSInstall python bash html htmldjango cpp json yaml javascript lua vim comment
+TSInstall python bash html typescript tsx htmldjango cpp json yaml javascript lua vim commentjsx
 ```
 
 

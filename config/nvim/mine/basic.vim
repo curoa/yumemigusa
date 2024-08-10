@@ -11,6 +11,10 @@ set complete=.,w,b,u,t
 set whichwrap=
 set showcmd
 
+" inherit terminal clor
+highlight Normal ctermbg=none guifg=none guibg=none
+
+
 " Move cursor to previous location when opening file
 " ref. https://qiita.com/yahihi/items/4112ab38b2cc80c91b16
 augroup vimrcEx
