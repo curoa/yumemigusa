@@ -100,6 +100,9 @@ pyenv  # install dependencies ref. https://github.com/pyenv/pyenv#install-python
 poetry  # ref. https://python-poetry.org/docs/#installing-with-the-official-installer  
 `curl -sSL https://install.python-poetry.org | python3 -`  
 
+use n to install nodejs
+https://qiita.com/nouernet/items/d6ad4d5f4f08857644de
+
 nvim  
 ref. https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2  
 treesitter が neovim 0.9.2 以降しかサポートしてない  
