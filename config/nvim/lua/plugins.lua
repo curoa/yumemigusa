@@ -9,6 +9,7 @@ require("packer").startup(function()
 			local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
 			ts_update()
 		end,
+		commit = 'fbe7621', -- 2024/08/11 indicate commit, because new one break tsx indent.
 	}
 	use({
 		"nvim-treesitter/nvim-treesitter-textobjects",
