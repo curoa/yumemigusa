@@ -107,6 +107,12 @@ nvim
 ref. https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2  
 treesitter が neovim 0.9.2 以降しかサポートしてない  
 :PackerInstall, :PackerUpdate, :PackerCompile # よく分かってない  
+新しく nvim を入れたら tsx のインデントが崩れた 2024/8/11
+    古いPCから .local/share/nvim/site/pack/packer/start を移したら正しくなった。
+    packer の git commit をメモする
+        nvim-surround v2.1.5
+        nvim-treesitter fbe7621
+        packer ea0cc3c
 
 
 イヤホンを接続していても、デフォルトで hdmi から音声出力
