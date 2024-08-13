@@ -116,12 +116,12 @@ treesitter が neovim 0.9.2 以降しかサポートしてない
 
 
 イヤホンを接続していても、デフォルトで hdmi から音声出力
-https://scrapbox.io/yosider/Ubuntu%E3%81%AE%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%81%A7%E5%86%85%E9%83%A8%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA%E3%82%88%E3%82%8AHDMI%E3%82%92%E5%84%AA%E5%85%88%E3%81%99%E3%82%8B
+ref. https://scrapbox.io/yosider/Ubuntu%E3%81%AE%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%81%A7%E5%86%85%E9%83%A8%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA%E3%82%88%E3%82%8AHDMI%E3%82%92%E5%84%AA%E5%85%88%E3%81%99%E3%82%8B
 ```
 pactl list short sinks # check name
-# code:/etc/pulse/default.pa # edit tail of file according to URL
+# code: /etc/pulse/default.pa # edit tail of file according to URL
 rm -r ~/.config/pulse/ # delete cache
-killall pulseaudo # reboot pulseaudo
+killall pulseaudio # reboot pulseaudio
 
 
 pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo
