@@ -9,7 +9,7 @@ hi LineNr guifg=#508fe2
 hi CursorLineNr gui=bold guifg=#51b8e1
 hi Search guifg=DarkGray guibg=#fff231
 hi Match guifg=white guibg=#cc7b10
-hi Statusline guifg=#aaaaaa guibg=#222222
+hi Statusline guifg=#aaaaaa guibg=none
 hi PmenuSel guifg=white guibg=#a45aaa
 hi Pmenu guifg=white guibg=Gray
 hi TabLineSel guibg=black
