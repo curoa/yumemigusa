@@ -4,6 +4,7 @@ nnoremap <buffer> <space>dp yypkIprint('<esc>A') # debug<esc>jIprint(<esc>A) # d
 nnoremap <buffer> <space>do yypkIprint('<esc>A') # debug<esc>jIpp(<esc>A) # debug<esc>
 
 " comment
+inoremap <buffer> @@ #
 nnoremap <buffer> <space>co I#<esc>
 nnoremap <buffer> <space>ci ^x
 nnoremap <buffer> <space>ca A #

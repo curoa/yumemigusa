@@ -9,7 +9,7 @@ hi LineNr guifg=#508fe2
 hi CursorLineNr gui=bold guifg=#51b8e1
 hi Search guifg=DarkGray guibg=#fff231
 hi Match guifg=white guibg=#cc7b10
-hi Statusline guifg=#aaaaaa guibg=none
+hi Statusline guifg=#aaaaaa guibg=#222222
 hi PmenuSel guifg=white guibg=#a45aaa
 hi Pmenu guifg=white guibg=Gray
 hi TabLineSel guibg=black
@@ -43,6 +43,8 @@ hi @tag.attribute guifg=#508fe2
 
 hi link @function.builtin @function
 hi link @constant.builtin @constant
+hi @attribute.builtin gui=bold
+hi @variable.builtin gui=bold
 hi link @type.builtin @type
 hi link @constructor Constructor
 hi link @parameter Strong
