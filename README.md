@@ -56,6 +56,13 @@ sudo apt install git
 set ssh for github, and clone this repository
 `git clone https://github.com/curoa/yumemigusa.git`
 
+```
+# ref. https://github.com/git-lfs/git-lfs/blob/main/INSTALLING.md
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+# ref. https://docs.github.com/ja/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage
+```
+
 シンボリックリンク  
 ```
 cd
