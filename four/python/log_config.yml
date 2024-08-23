@@ -22,6 +22,7 @@
 #    logger.warning('hello warning')
 #    logger.info('hello info')
 #    logger.debug('hello debug')
+#    logger.exception("msg")
 
 version: 1
 formatters:

@@ -17,7 +17,6 @@ nnoremap <buffer> <space>ce O// */<esc>
 " short
 inoremap <buffer> .^ <esc>ciw<<c-r>"><cr></<c-r>">
 inoremap <buffer> ,^ <esc>ciw<<c-r>" />
-inoremap <buffer> _d^ <esc>Ifunction <esc>A () {<cr>}<esc>kf(a
 
 inoremap <buffer> t^ true
 inoremap <buffer> f^ false
@@ -25,6 +24,7 @@ inoremap <buffer> n^ null
 inoremap <buffer> u^ undefined
 
 noremap <buffer> <space>; A;<esc>
+noremap <buffer> <space>b A<br /><esc>
 
 " if
 inoremap <buffer> if^ if () {<cr>}<esc>kf(a
@@ -39,4 +39,5 @@ nnoremap <buffer> ) :let @s = @/ \| :let @/ = "function "<cr>n:let @/ = @s \| no
 
 
 " macro
-nmap <buffer> _d^ f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o
+inoremap <buffer> _d^ <esc>Ifunction <esc>A () {<cr>}<esc>kf(a
+nnoremap <buffer> _d^ f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o

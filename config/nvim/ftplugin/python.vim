@@ -26,8 +26,6 @@ inoremap <buffer> n^ None
 inoremap <buffer> t^ True
 inoremap <buffer> f^ False
 inoremap <buffer> con^ continue
-inoremap <buffer> pd^ pickle.dump(obj, open(fpath, "wb"))
-inoremap <buffer> pl^ if os.path.exists(fpath):<cr>obj = pickle.load(open(fpath, "rb"))
 inoremap <buffer> rev^ reversed
 
 inoremap <buffer> ++ <space>+= 1
@@ -46,6 +44,8 @@ nnoremap <buffer> <c-]> "ayiw/def <c-r>a<cr>:noh<cr>t(
 
 " macro
 nmap <buffer> _d^ f(bd0f(%C):<cr><esc>k==Idef <esc>o
+inoremap <buffer> pd^ pickle.dump(obj, open(fpath, "wb"))
+inoremap <buffer> pl^ if os.path.exists(fpath):<cr>obj = pickle.load(open(fpath, "rb"))
 
 " util
 cnoremap <buffer> ch^ tabe ~/cheetsheet/python/mypyutil/

@@ -33,8 +33,8 @@ https://www.nvidia.com/ja-jp/drivers/
 reboot
 
 install chrome
-たぶんここが正しい
-http://cha.la.coocan.jp/wp/2023/06/24/ubuntu-google-chrome-install/
+公式が出した
+https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop#zippy=%2Clinux
 
 文字サイズ
 `sudo apt install gnome-tweaks`
