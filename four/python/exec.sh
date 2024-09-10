@@ -1,4 +1,4 @@
-cd `pwd -P`
+cd "$(dirname "$0")"
 date > ^d
 #export $(grep -v \# ../.env | xargs)
 
