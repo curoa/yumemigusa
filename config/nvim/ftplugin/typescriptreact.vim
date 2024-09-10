@@ -13,6 +13,7 @@ nnoremap <buffer> <space>ci ^2x
 nnoremap <buffer> <space>ca A //
 nnoremap <buffer> <space>cb o/*<esc>
 nnoremap <buffer> <space>ce O// */<esc>
+inoremap <buffer> @@ //
 
 " short
 inoremap <buffer> .^ <esc>ciw<<c-r>"><cr></<c-r>">
@@ -32,6 +33,9 @@ inoremap <buffer> if^ if () {<cr>}<esc>kf(a
 " loop
 inoremap <buffer> fe^ <esc>Ifor (let $ of <esc>A) {<cr>}<esc>k^f$s
 inoremap <buffer> fo^ <esc>Ifor (let i = 0; i < <esc>A.length; i++) {<cr>}<esc>k^f$s
+inoremap <buffer> fi^ <esc>Ifor (const [key, value] of Object.entries(<esc>A)) {<cr>}<esc>k^f$s
+inoremap <buffer> fk^ <esc>Ifor (const key of Object.keys(<esc>A)) {<cr>}<esc>k^f$s
+inoremap <buffer> fv^ <esc>Ifor (const value of Object.values(<esc>A)) {<cr>}<esc>k^f$s
 
 " move
 nnoremap <buffer> ( k:let @s = @/ \| :let @/ = "function "<cr>N:let @/ = @s \| noh<cr>t(
@@ -39,5 +43,8 @@ nnoremap <buffer> ) :let @s = @/ \| :let @/ = "function "<cr>n:let @/ = @s \| no
 
 
 " macro
-inoremap <buffer> _d^ <esc>Ifunction <esc>A () {<cr>}<esc>kf(a
+inoremap <buffer> _d^ <esc>Ifunction <esc>A() {<cr>}<esc>kf(a
 nnoremap <buffer> _d^ f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o
+
+" util
+cnoremap <buffer> ch^ tabe ~/cheetsheet/react/mytsxutil/
