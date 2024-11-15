@@ -97,7 +97,8 @@ alias lx="loadxkb"
 
 alias py="python"
 
-alias evi="evince"
+#alias evi="evince"
+alias evi="echo use okular"
 #alias open="eog"
 alias ulimitcoredump="ulimit -c unlimited"
 alias thunderbird="thunderbird &"

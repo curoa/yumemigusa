@@ -20,3 +20,4 @@ autocmd BufEnter * syntax match TrailingSpace /\s\+$/
 autocmd BufEnter *[(.md)|(.vim)] syntax clear TrailingSpace
 autocmd TermOpen * syntax clear TrailingSpace
 
+autocmd BufRead note set filetype=conf
