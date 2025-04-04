@@ -10,7 +10,7 @@ hi CursorLineNr gui=bold guifg=#51b8e1
 hi Search guifg=DarkGray guibg=#fff231
 hi Match guifg=white guibg=#cc7b10
 hi Statusline guifg=#aaaaaa guibg=#222222
-hi PmenuSel guifg=white guibg=#a45aaa
+hi PmenuSel guifg=#a45aaa guibg=white
 hi Pmenu guifg=white guibg=Gray
 hi TabLineSel guibg=black
 hi TabLine gui=NONE guifg=white guibg=Gray

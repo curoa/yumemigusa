@@ -17,8 +17,8 @@ nnoremap <buffer> <space>ce O// */<esc>
 inoremap <buffer> @@ //
 
 " short
-inoremap <buffer> .^ <esc>ciw<<c-r>"><cr></<c-r>">
-inoremap <buffer> ,^ <esc>ciw<<c-r>" />
+inoremap <buffer> .^ <c-g>u<esc>ciw<<c-r>"><cr></<c-r>">
+inoremap <buffer> ,^ <c-g>u<esc>ciw<<c-r>" />
 
 inoremap <buffer> t^ true
 inoremap <buffer> f^ false
