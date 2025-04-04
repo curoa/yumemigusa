@@ -1,5 +1,5 @@
 " file opration
-nnoremap <space>q :q<cr>
+nnoremap <space>q :q!<cr>
 nnoremap <space>w :wq<cr>
 nnoremap <space>a :wqa<cr>
 command! Mine tabe ~/.config/nvim/init.lua

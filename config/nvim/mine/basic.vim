@@ -8,6 +8,7 @@ set tabstop=4
 set shiftwidth=4
 set noexpandtab
 set complete=.,w,b,u,t
+set completeopt=menu,preview,fuzzy
 set whichwrap=
 set showcmd
 

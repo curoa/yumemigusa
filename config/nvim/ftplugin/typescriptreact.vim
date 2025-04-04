@@ -5,6 +5,7 @@ nnoremap <buffer> <space>dp yypkIconsole.log('<esc>A'); // debug<esc>jIconsole.l
 " map
 inoremap <buffer> ap^ push
 inoremap <buffer> cns^ const 
+inoremap <buffer> cn^ className="  " <left><left><left>
 
 " comment
 "inoremap <buffer> # //
