@@ -120,6 +120,8 @@ treesitter が neovim 0.9.2 以降しかサポートしてない
         nvim-surround v2.1.5
         nvim-treesitter fbe7621
         packer ea0cc3c
+    nvim 0.11.0 に upgrade したら tsx のインデントが再度崩れた
+        git commit を最新にしたら直った
 
 
 イヤホンを接続していても、デフォルトで hdmi から音声出力
