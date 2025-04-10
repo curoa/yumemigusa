@@ -79,6 +79,7 @@ omap a2 a"
 noremap <space> `
 noremap <space><space> :marks<cr>
 onoremap <silent> _ :<C-U>normal! T_vt_<CR>
+noremap 22 f"
 noremap 88 f(
 inoremap <c-h> <left>
 cnoremap <c-h> <left>
