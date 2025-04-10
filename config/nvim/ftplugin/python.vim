@@ -2,6 +2,8 @@
 nnoremap <buffer> <space>dl ^"aDaprint('<c-r>a', <c-r>a) # debug
 nnoremap <buffer> <space>dp yypkIprint('<esc>A') # debug<esc>jIprint(<esc>A) # debug<esc>
 nnoremap <buffer> <space>do yypkIprint('<esc>A') # debug<esc>jIpp(<esc>A) # debug<esc>
+cnoremap <buffer> co^ %s/^\(\s\+\)\([^#[:blank:]].\+\) # debug$/\1#\2 # debug/
+cnoremap <buffer> ci^ %s/^\(\s\+\)#\(.\+\) # debug$/\1\2 # debug/
 
 " comment
 inoremap <buffer> @@ #
@@ -19,6 +21,10 @@ inoremap <buffer> ze^ <esc>Ifor i, () in enumerate(zip(<esc>A)):<esc>^f(a
 inoremap <buffer> ez^ <esc>Ifor i, () in enumerate(zip(<esc>A)):<esc>^f(a
 inoremap <buffer> rn^ <esc>Ifor i in range(<esc>A):<esc>^ws
 
+" if
+inoremap <buffer> if^ <esc>Iif <esc>A:<esc>i
+inoremap <buffer> sc^ <esc>Imatch value:<cr>case 1:<cr>pass<cr>case _:<cr>pass<esc>
+
 " short
 inoremap <buffer> s^ self
 inoremap <buffer> ap^ append
@@ -27,15 +33,14 @@ inoremap <buffer> t^ True
 inoremap <buffer> f^ False
 inoremap <buffer> con^ continue
 inoremap <buffer> rev^ reversed
+inoremap <buffer> sm^ staticmethod
+inoremap <buffer> cm^ classmethod
 
 inoremap <buffer> ++ <space>+= 1
 inoremap <buffer> -- <space>-= 1
 
 " format
 nnoremap <buffer> == ^"aD"sddko<c-r>a<esc>
-
-cnoremap <buffer> co^ %s/^\(\s\+\)\([^#[:blank:]].\+\) # debug$/\1#\2 # debug/
-cnoremap <buffer> ci^ %s/^\(\s\+\)#\(.\+\) # debug$/\1\2 # debug/
 
 " move
 nnoremap <buffer> ( k:let @s = @/ \| :let @/ = "^\\s*def "<cr>N:let @/ = @s \| noh<cr>t(

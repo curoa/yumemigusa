@@ -45,7 +45,7 @@ nnoremap <buffer> ) :let @s = @/ \| :let @/ = "function "<cr>n:let @/ = @s \| no
 
 " macro
 inoremap <buffer> _d^ <esc>Ifunction <esc>A() {<cr>}<esc>kf(a
-nnoremap <buffer> _d^ f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o
+nnoremap <buffer> _d^ ^f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o
 
 " util
 cnoremap <buffer> ch^ tabe ~/cheetsheet/react/mytsxutil/
