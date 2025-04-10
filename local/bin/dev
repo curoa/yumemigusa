@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+current_dir=$(pwd)
+if [[ "$current_dir" == *"/backend" ]]; then
+  poetry run ./manage.py runserver
+elif [[ "$current_dir" == *"/frontend" ]]; then
+	npm run dev
+else
+  echo "here is neigher frontend nor backend"
+fi
