@@ -1,3 +1,5 @@
+-- ref. https://dev.to/dimaportenko/switching-between-camelcase-and-snakecase-in-neovim-using-lua-3ah7
+
 local function snake_to_camel()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
   local word = vim.fn.expand('<cword>')
@@ -7,4 +9,5 @@ local function snake_to_camel()
 end
 
 vim.api.nvim_create_user_command('SnakeToCamel', snake_to_camel, {})
+
 
