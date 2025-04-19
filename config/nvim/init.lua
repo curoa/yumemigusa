@@ -7,6 +7,8 @@
 require "plugins"
 require "treesitter"
 
+require "snake2camel"
+
 vim.cmd('source ~/.config/nvim/_init.vim')
 
 -- MEMO
