@@ -13,7 +13,7 @@ inoremap <buffer> ap^ push
 inoremap <buffer> cns^ const 
 inoremap <buffer> cn^ className="  " <left><left><left>
 inoremap <buffer> ac^ <space>+ "  "<left><left>
-nnoremap <buffer> <Leader>sc :SnakeToCamel<cr>
+nnoremap <buffer> <space>sc :SnakeToCamel<cr>
 
 " comment
 "inoremap <buffer> # //
@@ -54,8 +54,7 @@ nnoremap <buffer> ]] f}
 
 
 " macro
-inoremap <buffer> <Leader>d^ <esc>Ifunction <esc>A() {<cr>}<esc>kf(a
-nnoremap <buffer> <Leader>d^ ^f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o
+nnoremap <buffer> <space>d^ ^f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o
 
 " util
 cnoremap <buffer> ch^ tabe ~/cheetsheet/react/mytsxutil/

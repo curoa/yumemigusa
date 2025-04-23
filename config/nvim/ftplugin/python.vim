@@ -48,7 +48,7 @@ nnoremap <buffer> ) :let @s = @/ \| :let @/ = "^\\s*def "<cr>n:let @/ = @s \| no
 nnoremap <buffer> <c-]> "ayiw/def <c-r>a<cr>:noh<cr>t(
 
 " macro
-nmap <buffer> <Leader>d^ f(bd0f(%C):<cr><esc>k==Idef <esc>o
+nmap <buffer> <space>d^ f(bd0f(%C):<cr><esc>k==Idef <esc>o
 inoremap <buffer> pd^ pickle.dump(obj, open(fpath, "wb"))
 inoremap <buffer> pl^ if os.path.exists(fpath):<cr>obj = pickle.load(open(fpath, "rb"))
 

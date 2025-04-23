@@ -1,5 +1,3 @@
-let mapleader = " "
-
 " file opration
 nnoremap <space>q :q!<cr>
 nnoremap <space>w :wq<cr>
