@@ -1,3 +1,6 @@
+" enable gf cmd  for `import "@/app/hoge/fuga"` in nextjs
+setlocal includeexpr=substitute(v:fname,'/','','')
+
 " debug
 nnoremap <buffer> <space>dl ^"aDaconsole.log('<c-r>a', <c-r>a) // debug
 nnoremap <buffer> <space>dp yypkIconsole.log('<esc>A'); // debug<esc>jIconsole.log(<esc>A); // debug<esc>

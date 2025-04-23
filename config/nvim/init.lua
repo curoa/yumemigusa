@@ -8,6 +8,7 @@ require "plugins"
 require "treesitter"
 
 require "snake2camel"
+require "set_path_project_root"
 
 vim.cmd('source ~/.config/nvim/_init.vim')
 
