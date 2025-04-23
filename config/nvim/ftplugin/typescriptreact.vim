@@ -30,7 +30,7 @@ noremap <buffer> <space>; A;<esc>
 noremap <buffer> <space>b A<br /><esc>
 
 " if
-inoremap <buffer> if^ if () {<cr>}<esc>kf(a
+inoremap <buffer> if^ <esc>Iif (<esc>==A) {<cr>}<esc>kf(a
 
 " loop
 inoremap <buffer> fe^ <esc>Ifor (let $ of <esc>A) {<cr>}<esc>k^f$s
@@ -42,6 +42,8 @@ inoremap <buffer> fv^ <esc>Ifor (const value of Object.values(<esc>A)) {<cr>}<es
 " move
 nnoremap <buffer> ( k:let @s = @/ \| :let @/ = "function "<cr>N:let @/ = @s \| noh<cr>t(
 nnoremap <buffer> ) :let @s = @/ \| :let @/ = "function "<cr>n:let @/ = @s \| noh<cr>t(
+nnoremap <buffer> [[ f{
+nnoremap <buffer> ]] f}
 
 
 " macro
