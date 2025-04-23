@@ -1,6 +1,9 @@
 " enable gf cmd  for `import "@/app/hoge/fuga"` in nextjs
 setlocal includeexpr=substitute(v:fname,'/','','')
 
+" enable gf cmd open "hoge/[hogeId]/page.tsx"
+setlocal isfname+=[,]
+
 " debug
 nnoremap <buffer> <space>dl ^"aDaconsole.log('<c-r>a', <c-r>a) // debug
 nnoremap <buffer> <space>dp yypkIconsole.log('<esc>A'); // debug<esc>jIconsole.log(<esc>A); // debug<esc>
@@ -9,7 +12,8 @@ nnoremap <buffer> <space>dp yypkIconsole.log('<esc>A'); // debug<esc>jIconsole.l
 inoremap <buffer> ap^ push
 inoremap <buffer> cns^ const 
 inoremap <buffer> cn^ className="  " <left><left><left>
-nnoremap <buffer> _sc :SnakeToCamel<cr>
+inoremap <buffer> ac^ <space>+ "  "<left><left>
+nnoremap <buffer> <Leader>sc :SnakeToCamel<cr>
 
 " comment
 "inoremap <buffer> # //
@@ -50,8 +54,8 @@ nnoremap <buffer> ]] f}
 
 
 " macro
-inoremap <buffer> _d^ <esc>Ifunction <esc>A() {<cr>}<esc>kf(a
-nnoremap <buffer> _d^ ^f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o
+inoremap <buffer> <Leader>d^ <esc>Ifunction <esc>A() {<cr>}<esc>kf(a
+nnoremap <buffer> <Leader>d^ ^f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o
 
 " util
 cnoremap <buffer> ch^ tabe ~/cheetsheet/react/mytsxutil/

@@ -1,3 +1,5 @@
+let mapleader = " "
+
 " file opration
 nnoremap <space>q :q!<cr>
 nnoremap <space>w :wq<cr>
@@ -76,8 +78,8 @@ omap a2 a"
 
 
 " move
-noremap <space> `
-noremap <space><space> :marks<cr>
+noremap \ `
+noremap \\ :marks<cr>
 onoremap <silent> _ :<C-U>normal! T_vt_<CR>
 noremap 22 f"
 noremap 88 f(
