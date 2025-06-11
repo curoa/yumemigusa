@@ -16,7 +16,6 @@ hi TabLineSel guibg=black
 hi TabLine gui=NONE guifg=white guibg=Gray
 hi TabLineFill guibg=LightGray
 hi TrailingSpace guibg=#df4c94
-"match TrailingSpace /\s\+$/
 
 "hi Normal guifg=#aaaaaa " `hi Normal NONE` is better, because it does not overwrite other highlight
 hi Comment guifg=#508fe2

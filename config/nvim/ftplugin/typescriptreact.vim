@@ -23,15 +23,19 @@ nnoremap <buffer> <space>ca A //
 nnoremap <buffer> <space>cb o/*<esc>
 nnoremap <buffer> <space>ce O// */<esc>
 inoremap <buffer> @@ //
+inoremap <buffer> @[ {/*  */}<left><left><left><left>
 
 " short
 inoremap <buffer> .^ <c-g>u<esc>ciw<<c-r>"><cr></<c-r>">
 inoremap <buffer> ,^ <c-g>u<esc>ciw<<c-r>" />
+inoremap <buffer> $$ ${}<left>
 
+inoremap <buffer> con^ continue
 inoremap <buffer> t^ true
 inoremap <buffer> f^ false
 inoremap <buffer> n^ null
 inoremap <buffer> u^ undefined
+inoremap <buffer> d^ default
 
 noremap <buffer> <space>; A;<esc>
 noremap <buffer> <space>b A<br /><esc>

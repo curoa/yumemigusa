@@ -45,7 +45,7 @@ nnoremap <buffer> == ^"aD"sddko<c-r>a<esc>
 " move
 nnoremap <buffer> ( k:let @s = @/ \| :let @/ = "^\\s*def "<cr>N:let @/ = @s \| noh<cr>t(
 nnoremap <buffer> ) :let @s = @/ \| :let @/ = "^\\s*def "<cr>n:let @/ = @s \| noh<cr>t(
-nnoremap <buffer> <c-]> "ayiw/def <c-r>a<cr>:noh<cr>t(
+nnoremap <buffer> <c-]> "ayiw/\(def\\|class\) <c-r>a<cr>:noh<cr>t(
 
 " macro
 nmap <buffer> <space>d^ f(bd0f(%C):<cr><esc>k==Idef <esc>o
