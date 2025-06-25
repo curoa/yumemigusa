@@ -26,7 +26,7 @@ fpath=(~/.zsh/completion $fpath)
 #fpath+=~/.zsh/completion
 #fpath+=~/.zfunc
 autoload -Uz compinit
-compinit -D
+compinit
 # End of lines added by compinstall, but I edit it
 
 
