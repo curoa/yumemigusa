@@ -19,7 +19,7 @@ cnoremap %% %:h
 nnoremap gm :wa \| !echo -e '\e[38;5;0m\e[48;5;51m --- make ---  \e[m'; make -j
 nnoremap <space>f :wa \| tabe \| terminal echo -e '\e[38;5;0m\e[48;5;51m --- exec --- \e[m';./exec.sh<cr><cr>
 "nnoremap <space>f :terminal<cr>Afo
-nnoremap <space>s :terminal<cr>A
+"nnoremap <space>s :terminal<cr>A
 
 
 " tab
