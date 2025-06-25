@@ -22,10 +22,11 @@ zstyle ':completion:*' list-colors ${LS_COLORS}
 zstyle ':completion:*' menu select interactive
 setopt menu_complete
 
-autoload -Uz compinit
+fpath=(~/.zsh/completion $fpath)
+#fpath+=~/.zsh/completion
 #fpath+=~/.zfunc
-fpath+=~/.zsh/completion
-compinit
+autoload -Uz compinit
+compinit -D
 # End of lines added by compinstall, but I edit it
 
 
