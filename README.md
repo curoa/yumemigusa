@@ -33,8 +33,16 @@ https://www.nvidia.com/ja-jp/drivers/
 reboot
 
 install chrome
-公式が出した
+公式が出したはずだったのに無くなってるみたいだから、結局 下記コマンドで
 https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop#zippy=%2Clinux
+
+```sh
+wget -qO- https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --yes --dearmor -o /etc/apt/trusted.gpg.d/google-chrome.gpg \
+  && sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list' \
+  && sudo apt update \
+  && sudo apt install -y google-chrome-stable
+```
+
 
 文字サイズ
 `sudo apt install gnome-tweaks`

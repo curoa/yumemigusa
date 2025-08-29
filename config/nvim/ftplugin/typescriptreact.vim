@@ -35,7 +35,11 @@ inoremap <buffer> t^ true
 inoremap <buffer> f^ false
 inoremap <buffer> n^ null
 inoremap <buffer> u^ undefined
+inoremap <buffer> ex^ export
 inoremap <buffer> d^ default
+inoremap <buffer> fu^ function
+inoremap <buffer> as^ async
+inoremap <buffer> aw^ await
 
 noremap <buffer> <space>; A;<esc>
 noremap <buffer> <space>b A<br /><esc>
