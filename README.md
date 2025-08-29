@@ -81,6 +81,7 @@ ln -s ~/yumemigusa/zsh ~/.zsh
 ln -s ~/yumemigusa/config/* ~/.config
 ln -s ~/yumemigusa/ssh_config ~/.ssh/config
 ln -s ~/yumemigusa/four ~/four
+ln -s ~/yumemigusa/xbindkeysrc ~/.xbindkeysrc
 ```
 
 cvs 設定
