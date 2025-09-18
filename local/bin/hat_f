@@ -1,0 +1,1 @@
+find frontend/app frontend/lib backend/api | grep -v -e __pycache__ -e migrations  | grep -e tsx -e py -e css > ^f
