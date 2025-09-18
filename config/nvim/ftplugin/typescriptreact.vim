@@ -14,6 +14,8 @@ inoremap <buffer> cns^ const
 inoremap <buffer> cn^ className="  " <left><left><left>
 inoremap <buffer> ac^ <space>+ "  "<left><left>
 nnoremap <buffer> <space>sc :SnakeToCamel<cr>
+" `ss` means set state
+nnoremap <buffer> <space>ss yawea, <esc>pb~hiset<esc>
 
 " comment
 "inoremap <buffer> # //
@@ -35,11 +37,13 @@ inoremap <buffer> t^ true
 inoremap <buffer> f^ false
 inoremap <buffer> n^ null
 inoremap <buffer> u^ undefined
-inoremap <buffer> ex^ export
-inoremap <buffer> d^ default
-inoremap <buffer> fu^ function
-inoremap <buffer> as^ async
-inoremap <buffer> aw^ await
+inoremap <buffer> e^ export<space>
+inoremap <buffer> ex^ export<space>
+inoremap <buffer> d^ default<space>
+inoremap <buffer> de^ default<space>
+inoremap <buffer> fu^ function<space>
+inoremap <buffer> as^ async<space>
+inoremap <buffer> aw^ await<space>
 
 noremap <buffer> <space>; A;<esc>
 noremap <buffer> <space>b A<br /><esc>
@@ -66,3 +70,7 @@ nnoremap <buffer> <space>d^ ^f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o
 
 " util
 cnoremap <buffer> ch^ tabe ~/cheetsheet/react/mytsxutil/
+
+" jsx
+inoremap <buffer> ma^ <esc>I{<esc>A.map((one, index) => (<cr><div key={}><cr></div><cr>))}<esc>kkk^f(fo3==
+
