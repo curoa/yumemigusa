@@ -72,5 +72,5 @@ nnoremap <buffer> <space>d^ ^f(bd0f(%C) {<cr>}<esc>k==Ifunction <esc>o
 cnoremap <buffer> ch^ tabe ~/cheetsheet/react/mytsxutil/
 
 " jsx
-inoremap <buffer> ma^ <esc>I{<esc>A.map((one, index) => (<cr><div key={}><cr></div><cr>))}<esc>kkk^f(fo3==
+inoremap <buffer> ma^ <esc>I{<esc>A.map((one, index) => (<cr><div key={} ><cr></div><cr>))}<esc>kkk^f(fo3==
 
