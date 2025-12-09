@@ -5,6 +5,7 @@
   go_down = <Primary><Shift>j
   go_left = <Primary><Shift>h
   go_right = <Primary><Shift>l
+  preferences_keybindings = "" # default bind conflicts
 [profiles]
   [[default]]
     background_darkness = 0.85

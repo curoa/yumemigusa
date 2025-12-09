@@ -1,4 +1,6 @@
 #!/bin/bash
+# xdotool getmouselocation
 xdotool mousemove 41 266 click 1
 sleep 0.05
-xdotool mousemove 1761 1079 click 1
+#xdotool mousemove 1772 1030 click 1
+xdotool mousemove 1772 1070 click 1
