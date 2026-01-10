@@ -87,6 +87,7 @@ alias rz^="source ~/.zshrc"
 alias by="exit"
 alias cdu="cd .."
 alias cv=". cv"
+alias cr=". cr"
 alias fo="./exec.sh"
 alias ho="chmod 755 exec.sh"
 alias vo="vim exec.sh"
@@ -145,10 +146,9 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 # http://zsh.sourceforge.net/Doc/Release/Completion-System.html#Completion-System
 # setopt no_flow_control # what's this?
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"

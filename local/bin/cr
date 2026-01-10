@@ -1,0 +1,45 @@
+#!/bin/sh
+
+() {
+    local start_dir=$(pwd)
+    local target_root=""
+    local current_ptr=$(pwd)
+
+    # 1. 親方向にプロジェクトルートを探す
+    while true; do
+        if [[ -e "$current_ptr/frontend" && -e "$current_ptr/backend" ]]; then
+            target_root="$current_ptr"
+            break
+        fi
+
+        if [[ "$current_ptr" == "/" ]]; then
+            echo "Error: Project root (containing 'frontend' and 'backend') not found."
+            return 1
+        fi
+        current_ptr=$(dirname "$current_ptr")
+    done
+
+    # 2. 引数に基づいたサブディレクトリの決定
+    local sub_dir=""
+    case "$1" in
+        frontend) sub_dir="frontend" ;;
+        app)      sub_dir="frontend/app" ;;
+        backend)  sub_dir="backend" ;;
+        api)      sub_dir="backend/api" ;;
+        *)
+            if [[ -n "$1" ]]; then
+                echo "Error: Unknown argument '$1'. Use frontend, app, backend, or api."
+                return 1
+            fi
+            ;;
+    esac
+
+    # 3. 移動の実行
+    if [[ -d "$target_root/$sub_dir" ]]; then
+        cd "$target_root/$sub_dir"
+        echo "Moved to: $(pwd)"
+    else
+        echo "Error: Directory '$target_root/$sub_dir' does not exist."
+        return 1
+    fi
+} "$@"

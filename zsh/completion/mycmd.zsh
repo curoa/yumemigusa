@@ -3,6 +3,11 @@ function _cv {
 }
 compdef _cv cv
 
+function _cr {
+	compadd frontend app backend api
+}
+compdef _cr cr
+
 function _four {
 	compadd beamer c++ pdflatex python procon pandoc
 }
