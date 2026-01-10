@@ -1,4 +1,6 @@
 #!/bin/sh
+# change village
+
 t=$1
 if [ $# -eq 0 ]; then
 	t=0

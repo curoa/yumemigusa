@@ -1,4 +1,5 @@
 #!/bin/sh
+# change relative
 
 () {
     local start_dir=$(pwd)
