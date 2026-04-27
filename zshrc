@@ -45,6 +45,7 @@ else
 	export PROMPT=$'%{\e[38;5;48m%}[vim %c]%{\e[m%}'
 fi
 #random_background
+sh ~/.local/bin/change_bg.sh
 
 alias vi='/etc/alternatives/vi'
 #alias vi='/usr/bin/vim.tiny'
@@ -62,7 +63,7 @@ alias llt='ls -tl'
 alias mv='mv -b --suffix=_$(date +%Y%m%d).bk'
 alias cp='cp -b --suffix=_$(date +%Y%m%d).bk'
 alias grep="grep --color=auto"
-alias grepy="grep --color=auto -rn --include='*.py' * -e"
+alias grepy="grep --color=auto -rn --exclude-dir=.venv --include='*.py' * -e"
 alias grepinc="noglob grepinc"
 alias pgrep="grep --color=never"
 alias vimgrep="grep -n --color=never"
@@ -87,7 +88,7 @@ alias rz^="source ~/.zshrc"
 alias by="exit"
 alias cdu="cd .."
 alias cv=". cv"
-alias cr=". cr"
+alias cs=". cs"
 alias fo="./exec.sh"
 alias ho="chmod 755 exec.sh"
 alias vo="vim exec.sh"
@@ -136,6 +137,9 @@ alias lg="git lg"
 
 alias lo="libreoffice"
 
+export PATH=${PATH}:/usr/local/cuda/bin
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda/lib64
+
 # neovim
 # ref. https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2
 # curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
@@ -152,3 +156,6 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
+
+# for dev
+export DEBUG=1

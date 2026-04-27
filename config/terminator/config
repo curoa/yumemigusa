@@ -5,12 +5,14 @@
   go_down = <Primary><Shift>j
   go_left = <Primary><Shift>h
   go_right = <Primary><Shift>l
-  preferences_keybindings = "" # default bind conflicts
+  preferences_keybindings = ""
 [profiles]
   [[default]]
     background_darkness = 0.85
     background_type = image
-    background_image = /home/blackcat/Pictures/image/henrietta_resize.jpg
+    background_image = /home/blackcat/Pictures/image/terminatorbg/22_resize.jpg
+    background_image_mode = scale_and_crop
+    background_image_align_vert = top
 [layouts]
   [[default]]
     [[[window0]]]

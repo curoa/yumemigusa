@@ -123,3 +123,6 @@ endfunction
 let g:Netrw_UserMaps = [
 \   ['gb', 'NetrwMapping_prev_tab'],
 \ ]
+
+" fucking ag
+cmap 5s %s/\s\+$//

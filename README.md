@@ -106,6 +106,16 @@ https://www.rough-and-cheap.jp/linux/ubuntu-change-xdg-directory-name/
 
 画像は Google Drive で管理
 https://drive.google.com/drive/folders/0B1BdHf2G96URfnpacTdWbmZPdGk4el91cjFFSC10QmJKSHVLSXBwdWhNMExzcDFfcEFMVjA?resourcekey=0-D0qaGYe7k3PBjBuA2wS-aQ
+- かのかり るかちゃん
+- リコリス
+- さえかの
+- 推しの子
+- 負けイン
+- 氷菓 えるたそ
+- まどまぎ
+- 灰色のグラムガル
+- FF 13 セラ
+- FF 7
 
 youtube, meet as app
 chrome で開いて、URLバーからアプリインストール。一回閉じて、windows key から検索で起動してタスクバーにお気に入り登録

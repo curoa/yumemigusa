@@ -1,3 +1,3 @@
 #!/bin/bash
 # make ^f file for drf nextjs project
-find frontend/app frontend/lib backend/api | grep -v -e __pycache__ -e migrations  | grep -e tsx -e py -e css > ^f
+find frontend/app frontend/lib backend/api | grep -v -e __pycache__ -e migrations  | grep -e tsx -e py -e css | sort -n > ^f

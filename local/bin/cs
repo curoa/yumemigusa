@@ -1,5 +1,5 @@
 #!/bin/sh
-# change relative
+# change spot
 
 () {
     local start_dir=$(pwd)
@@ -27,12 +27,7 @@
         app)      sub_dir="frontend/app" ;;
         backend)  sub_dir="backend" ;;
         api)      sub_dir="backend/api" ;;
-        *)
-            if [[ -n "$1" ]]; then
-                echo "Error: Unknown argument '$1'. Use frontend, app, backend, or api."
-                return 1
-            fi
-            ;;
+        *)        sub_dir="$1" ;;
     esac
 
     # 3. 移動の実行

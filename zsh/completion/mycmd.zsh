@@ -3,10 +3,10 @@ function _cv {
 }
 compdef _cv cv
 
-function _cr {
-	compadd frontend app backend api
+function _cs {
+	compadd frontend app backend api e2e
 }
-compdef _cr cr
+compdef _cs cs
 
 function _four {
 	compadd beamer c++ pdflatex python procon pandoc
