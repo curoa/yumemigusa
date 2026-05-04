@@ -99,7 +99,6 @@ ln -s ~/yumemigusa/zsh ~/.zsh
 ln -s ~/yumemigusa/config/* ~/.config
 ln -s ~/yumemigusa/ssh_config ~/.ssh/config
 ln -s ~/yumemigusa/four ~/four
-ln -s ~/yumemigusa/xbindkeysrc ~/.xbindkeysrc
 ```
 
 ### cvs 設定
@@ -162,17 +161,6 @@ sudo ln -s /home/blackcat/yumemigusa/keyd/default.conf
 IME Mozc 入力のスペースと括弧を半角に
 
 
-## desktop
-
-ディレクトリを英語に
-`LANG=C xdg-user-dirs-gtk-update`
-https://www.rough-and-cheap.jp/linux/ubuntu-change-xdg-directory-name/
-
-youtube, meet as app
-chrome で開いて、URLバーからアプリインストール。一回閉じて、windows key から検索で起動してタスクバーにお気に入り登録
-https://support.google.com/chrome_webstore/answer/3060053?hl=ja#zippy=%2Cchrome-%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B9%E3%83%88%E3%82%A2%E3%81%8B%E3%82%89%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B
-これをしたり、URL からアプリとして開くとかしてるうまくいった。
-
 ## dev
 
 install uv
@@ -189,6 +177,35 @@ install nvim packer
 ### memo
 ref. https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2  
 treesitter が neovim 0.9.2 以降しかサポートしてなかったが、apt install nvim で ok  
+
+## desktop
+
+ディレクトリを英語に
+`LANG=C xdg-user-dirs-gtk-update`
+https://www.rough-and-cheap.jp/linux/ubuntu-change-xdg-directory-name/
+
+youtube, meet as app
+chrome で開いて、URLバーからアプリインストール。一回閉じて、windows key から検索で起動してタスクバーにお気に入り登録
+https://support.google.com/chrome_webstore/answer/3060053?hl=ja#zippy=%2Cchrome-%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B9%E3%83%88%E3%82%A2%E3%81%8B%E3%82%89%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B
+これをしたり、URL からアプリとして開くとかしてるうまくいった。
+
+### youtube skip
+
+for wayland
+ubuntu custom keyboard shortcut で youtube_skip を登録  
+youtube_skip コマンドを /usr/local/bin に ln -s  
+
+```sh
+sudo apt install ydotool
+sudo usermod -aG input $USER
+echo 'KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/80-uinput.rules
+sudo udevadm control --reload-rules && sudo udevadm trigger # reload setting
+reboot
+ydotool mousemove --absolute 40 200 # check
+```
+
+ydotool はディスプレイを移動できない。つらい
+
 
 ### old
 新しく nvim を入れたら tsx のインデントが崩れた 2024/8/11
