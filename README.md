@@ -1,3 +1,5 @@
+## Ubuntu
+
 jp ubuntu
 https://www.ubuntulinux.jp/download
 
@@ -16,13 +18,18 @@ ext4 /home
 
 with third party software
 
+
+## apt
+
 ```
 sudo apt update
 sudo apt upgrade
 sudo apt install build-essential xsel colordiff curl sysstat
 ```
 
-install Nvidia driver
+
+## install Nvidia driver
+
 `sudo apt install nvidia-driver-XXX`
 XXX はバージョン以下で正しそうな番号を確認
 https://www.nvidia.com/ja-jp/drivers/
@@ -32,7 +39,9 @@ https://www.nvidia.com/ja-jp/drivers/
 
 reboot
 
-install chrome
+
+## install chrome
+
 公式が出したはずだったのに無くなってるみたいだから、結局 下記コマンドで
 https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop#zippy=%2Clinux
 
@@ -44,9 +53,13 @@ wget -qO- https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --yes --d
 ```
 
 
-文字サイズ
+## 文字サイズ
+
 `sudo apt install gnome-tweaks`
 tweaks で 倍率 2.0
+
+
+## ssh
 
 .ssh の　key を移す
 chmod 700 ~/.ssh
@@ -54,6 +67,8 @@ chmod 600 ~/.ssh/id_rsa
 chmod 644 ~/.ssh/id_rsa.pub
 chmod 644 ~/.ssh/known_hosts
 
+
+## git
 
 ```
 # ref. https://git-scm.com/download/linux
@@ -71,7 +86,10 @@ sudo apt-get install git-lfs
 # ref. https://docs.github.com/ja/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage
 ```
 
-シンボリックリンク  
+## yumemigusa
+
+### link
+
 ```
 cd
 ln -s ~/yumemigusa/local/bin ~/.local/bin
@@ -84,25 +102,14 @@ ln -s ~/yumemigusa/four ~/four
 ln -s ~/yumemigusa/xbindkeysrc ~/.xbindkeysrc
 ```
 
-cvs 設定
+### cvs 設定
 `mkdir -p ~/.local/var/cv_data/`
+
+## terminator
 
 ```
 sudo apt install terminator
 ```
-
-```
-sudo apt install zsh
-chsh -s $(which zsh)
-```
-
-キーボード設定
-https://qiita.com/curoa/items/9bf52d90a8f60beb5c00
-
-ディレクトリを英語に
-`LANG=C xdg-user-dirs-gtk-update`
-https://www.rough-and-cheap.jp/linux/ubuntu-change-xdg-directory-name/
-
 
 画像は Google Drive で管理
 https://drive.google.com/drive/folders/0B1BdHf2G96URfnpacTdWbmZPdGk4el91cjFFSC10QmJKSHVLSXBwdWhNMExzcDFfcEFMVjA?resourcekey=0-D0qaGYe7k3PBjBuA2wS-aQ
@@ -117,22 +124,73 @@ https://drive.google.com/drive/folders/0B1BdHf2G96URfnpacTdWbmZPdGk4el91cjFFSC10
 - FF 13 セラ
 - FF 7
 
+
+## zsh
+
+```
+sudo apt install zsh
+chsh -s $(which zsh)
+```
+
+## input
+
+キーボード設定
+old ref. https://qiita.com/curoa/items/9bf52d90a8f60beb5c00
+TODO
+
+key 入力はキーコードが使える xkb で jpkey 部分を設定。  
+
+
+```sh
+cd /usr/share/X11/xkb/symbols/
+sudo ln -s /home/blackcat/yumemigusa/xkb/symbols/jpkey
+dconf write /org/gnome/desktop/input-sources/xkb-options "['jpkey:util']"
+dconf read /org/gnome/desktop/input-sources/xkb-options
+```
+
+
+CapsLock Arrow は 柔軟な keyd で設定  
+
+```sh
+sudo apt install keyd
+sudo systemctl start keyd
+cd /etc/keyd/
+sudo ln -s /home/blackcat/yumemigusa/keyd/default.conf
+```
+
+
+IME Mozc 入力のスペースと括弧を半角に
+
+
+## desktop
+
+ディレクトリを英語に
+`LANG=C xdg-user-dirs-gtk-update`
+https://www.rough-and-cheap.jp/linux/ubuntu-change-xdg-directory-name/
+
 youtube, meet as app
 chrome で開いて、URLバーからアプリインストール。一回閉じて、windows key から検索で起動してタスクバーにお気に入り登録
 https://support.google.com/chrome_webstore/answer/3060053?hl=ja#zippy=%2Cchrome-%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B9%E3%83%88%E3%82%A2%E3%81%8B%E3%82%89%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B
 これをしたり、URL からアプリとして開くとかしてるうまくいった。
 
-pyenv  # install dependencies ref. https://github.com/pyenv/pyenv#install-python-build-dependencies  
-poetry  # ref. https://python-poetry.org/docs/#installing-with-the-official-installer  
-`curl -sSL https://install.python-poetry.org | python3 -`  
+## dev
+
+install uv
 
 use n to install nodejs
 https://qiita.com/nouernet/items/d6ad4d5f4f08857644de
 
-nvim  
-ref. https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2  
-treesitter が neovim 0.9.2 以降しかサポートしてない  
+## nvim
+
+sudo apt install nvim  
+install nvim packer  
 :PackerInstall, :PackerUpdate, :PackerCompile # よく分かってない  
+
+### memo
+ref. https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2  
+treesitter が neovim 0.9.2 以降しかサポートしてなかったが、apt install nvim で ok  
+
+### old
 新しく nvim を入れたら tsx のインデントが崩れた 2024/8/11
     古いPCから .local/share/nvim/site/pack/packer/start を移したら正しくなった。
     packer の git commit をメモする
@@ -143,7 +201,10 @@ treesitter が neovim 0.9.2 以降しかサポートしてない
         git commit を最新にしたら直った
 
 
-イヤホンを接続していても、デフォルトで hdmi から音声出力
+## meeting setting
+
+### イヤホンを接続していても、デフォルトで hdmi から音声出力
+
 ref. https://scrapbox.io/yosider/Ubuntu%E3%81%AE%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%81%A7%E5%86%85%E9%83%A8%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA%E3%82%88%E3%82%8AHDMI%E3%82%92%E5%84%AA%E5%85%88%E3%81%99%E3%82%8B
 ```
 pactl list short sinks # check name
@@ -158,14 +219,18 @@ pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo
 ```
 
 
-google chrome で画面共有できないとき
+### google chrome で画面共有できないとき
+
 https://askubuntu.com/questions/1407494/screen-share-not-working-in-ubuntu-22-04-in-all-platforms-zoom-teams-google-m
+
+## memo
+
+PDF reader には okular がよいかも
+
+## old memo
 
 TODO
 cuda
 前回 2024/4 に cuda を入れたときは shell の描画がリフレッシュされない問題が発生した。
 cuda のせいだとは断言できないが、タイミング的にそんな気がしている
 
-IME Mozc 入力のスペースと括弧を半角に
-
-PDF reader には okular がよいかも
